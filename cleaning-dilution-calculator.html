@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cleaning Dilution Calculator | CleaningRatio</title>
+    <meta
+      name="description"
+      content="Calculate correct cleaning dilution ratios for household cleaners. Simple, safe, and accurate dilution calculator."
+    />
+
+    <!-- Main CSS pointer -->
+    <link rel="stylesheet" href="assets/css/style-v1.css" />
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="assets/css/calculator-cleaning.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">CleaningRatio</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="cleaning-dilution-calculator.html">Cleaning Dilution</a>
+            </li>
+            <li>
+              <a href="bleach-dilution-calculator.html">Bleach Dilution</a>
+            </li>
+            <li>
+              <a href="essential-oil-ratio-calculator.html"
+                >Essential Oil Ratio</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" hidden>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cleaning-dilution-calculator">Cleaning Dilution</a></li>
+          <li><a href="bleach-dilution-calculator">Bleach Dilution</a></li>
+          <li>
+            <a href="essential-oil-ratio-calculator">Essential Oil Ratio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="calculator-page">
+      <!-- Hero / Intro -->
+      <section class="calculator-hero">
+        <h1>Cleaning Dilution Calculator</h1>
+        <p class="subtitle">
+          Calculate the correct amount of cleaner and water for safe and
+          effective household cleaning.
+        </p>
+
+        <p class="note">
+          Always follow product label instructions. Do not mix incompatible
+          cleaners.
+        </p>
+      </section>
+
+      <!-- Calculator Card -->
+      <section class="calculator-card">
+        <form id="cleaning-dilution-form">
+          <!-- Cleaner Type -->
+          <div class="form-group">
+            <label for="cleaner-type">Cleaner type</label>
+            <select id="cleaner-type" required>
+              <option value="">Select cleaner</option>
+              <option value="vinegar">White vinegar</option>
+              <option value="general">General household cleaner</option>
+              <option value="concentrate">Concentrated cleaner</option>
+            </select>
+          </div>
+
+          <!-- Cleaner Concentration -->
+          <div class="form-group">
+            <label for="cleaner-concentration">
+              Cleaner concentration (%)
+            </label>
+            <input
+              type="number"
+              id="cleaner-concentration"
+              min="0"
+              max="100"
+              step="0.1"
+              placeholder="e.g. 5"
+              required
+            />
+          </div>
+
+          <!-- Final Volume -->
+          <div class="form-group">
+            <label for="final-volume"> Final solution volume </label>
+            <div class="input-inline">
+              <input
+                type="number"
+                id="final-volume"
+                min="0"
+                step="1"
+                placeholder="e.g. 1000"
+                required
+              />
+              <select id="volume-unit">
+                <option value="ml">ml</option>
+                <option value="l">liters</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Desired Strength -->
+          <div class="form-group">
+            <label for="desired-strength"> Desired final strength (%) </label>
+            <input
+              type="number"
+              id="desired-strength"
+              min="0"
+              max="100"
+              step="0.1"
+              placeholder="e.g. 0.5"
+              required
+            />
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button type="button" id="calculate-btn">Calculate</button>
+            <button type="reset" class="secondary">Clear</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Results -->
+      <section class="result-card" id="result-card" hidden>
+        <h2>Your cleaning mixture</h2>
+
+        <ul class="results-list">
+          <li>
+            <strong>Cleaner:</strong>
+            <span id="result-cleaner">—</span>
+          </li>
+          <li>
+            <strong>Water:</strong>
+            <span id="result-water">—</span>
+          </li>
+          <li>
+            <strong>Ratio:</strong>
+            <span id="result-ratio">—</span>
+          </li>
+        </ul>
+
+        <div class="safety-box">
+          <strong>Safety reminder</strong>
+          <p>
+            Add cleaner to water, not water to cleaner. Never mix bleach with
+            vinegar or ammonia.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> CleaningRatio ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </p>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculators/cleaning.js"></script>
+  </body>
+</html>

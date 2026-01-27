@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Essential Oil Ratio Calculator | CleaningRatio</title>
+    <meta
+      name="description"
+      content="Calculate essential oil drops for cleaning sprays and household mixes. Simple essential oil dilution calculator for bottle sizes."
+    />
+
+    <!-- Main CSS pointer -->
+    <link rel="stylesheet" href="assets/css/style-v1.css" />
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="assets/css/calculator-essential-oil.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html">CleaningRatio</a>
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="cleaning-dilution-calculator.html">Cleaning Dilution</a>
+            </li>
+            <li>
+              <a href="bleach-dilution-calculator.html">Bleach Dilution</a>
+            </li>
+            <li>
+              <a href="essential-oil-ratio-calculator.html" aria-current="page"
+                >Essential Oil Ratio</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" hidden>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cleaning-dilution-calculator">Cleaning Dilution</a></li>
+          <li><a href="bleach-dilution-calculator">Bleach Dilution</a></li>
+          <li>
+            <a href="essential-oil-ratio-calculator">Essential Oil Ratio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="calculator-page">
+      <!-- Hero -->
+      <section class="calculator-hero">
+        <h1>Essential Oil Ratio Calculator</h1>
+        <p class="subtitle">
+          Calculate the correct number of essential oil drops for sprays and
+          household mixes.
+        </p>
+        <p class="note">
+          Use essential oils carefully. Keep away from children and pets. Do not
+          ingest.
+        </p>
+      </section>
+
+      <!-- Calculator Card -->
+      <section class="calculator-card">
+        <form id="essential-oil-form">
+          <!-- Bottle Size -->
+          <div class="form-group">
+            <label for="bottle-size">Bottle size</label>
+            <div class="input-inline">
+              <input
+                type="number"
+                id="bottle-size"
+                min="0"
+                step="1"
+                placeholder="e.g. 500"
+                required
+              />
+              <select id="bottle-unit">
+                <option value="ml">ml</option>
+                <option value="l">liters</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Use Case -->
+          <div class="form-group">
+            <label for="use-case">Use case</label>
+            <select id="use-case" required>
+              <option value="">Select use case</option>
+              <option value="cleaning-spray">Cleaning spray</option>
+              <option value="air-freshener">Air freshener</option>
+              <option value="laundry">Laundry</option>
+            </select>
+          </div>
+
+          <!-- Sensitivity -->
+          <div class="form-group">
+            <label for="sensitivity">Household sensitivity</label>
+            <select id="sensitivity" required>
+              <option value="">Select sensitivity</option>
+              <option value="normal">Normal</option>
+              <option value="sensitive">
+                Sensitive (kids/pets/strong smell)
+              </option>
+            </select>
+          </div>
+
+          <!-- Strength -->
+          <div class="form-group">
+            <label for="strength">Strength</label>
+            <select id="strength" required>
+              <option value="">Select strength</option>
+              <option value="light">Light</option>
+              <option value="normal">Normal</option>
+              <option value="strong">Strong</option>
+            </select>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button type="button" id="calculate-oil-btn">Calculate</button>
+            <button type="reset" class="secondary">Clear</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Results -->
+      <section class="result-card" id="oil-result-card" hidden>
+        <h2>Your essential oil amount</h2>
+
+        <ul class="results-list">
+          <li>
+            <strong>Recommended drops:</strong>
+            <span id="result-drops">—</span>
+          </li>
+          <li>
+            <strong>Drop ratio:</strong>
+            <span id="result-drop-ratio">—</span>
+          </li>
+        </ul>
+
+        <div class="safety-box">
+          <strong>Safety reminder</strong>
+          <p>
+            Avoid direct skin contact. Store oils securely. Use lower amounts
+            for sensitive households.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> CleaningRatio ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </p>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculators/essential-oil.js"></script>
+  </body>
+</html>

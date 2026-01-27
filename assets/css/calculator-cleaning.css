@@ -1,0 +1,99 @@
+/* =====================================================
+   calculator-cleaning.css
+   Cleaning Dilution Calculator – Page-specific styling
+   Focus: clarity, hierarchy, calm professional UX
+===================================================== */
+
+/* ---------- Page Spacing ---------- */
+.calculator-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* ---------- Hero Refinement ---------- */
+.calculator-hero h1 {
+  max-width: 700px;
+}
+
+.calculator-hero .subtitle {
+  font-size: var(--font-size-lg);
+}
+
+.calculator-hero .note {
+  color: var(--color-warning);
+}
+
+/* ---------- Calculator Card Emphasis ---------- */
+.calculator-card {
+  border-top: 4px solid var(--color-primary);
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.form-group input::placeholder {
+  color: #9aa0a6;
+}
+
+/* ---------- Inline Inputs ---------- */
+.input-inline input {
+  flex: 1;
+}
+
+.input-inline select {
+  min-width: 90px;
+}
+
+/* ---------- Action Buttons ---------- */
+.form-actions {
+  justify-content: flex-start;
+}
+
+.form-actions button {
+  min-width: 120px;
+}
+
+/* ---------- Result Card ---------- */
+.result-card {
+  border-top: 4px solid var(--color-success);
+}
+
+.result-card h2 {
+  font-size: var(--font-size-lg);
+}
+
+.results-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.results-list span {
+  color: var(--color-primary);
+}
+
+/* ---------- Safety Box ---------- */
+.result-card .safety-box {
+  margin-top: var(--space-5);
+  background-color: #fff7e6;
+}
+
+/* ---------- Mobile Refinement ---------- */
+@media (max-width: 480px) {
+  .results-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
