@@ -45,7 +45,12 @@
         </nav>
 
         <!-- Mobile Hamburger -->
-        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <button
+          class="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -53,7 +58,7 @@
       </div>
 
       <!-- Mobile Navigation -->
-      <nav class="nav-mobile" hidden>
+      <nav class="nav-mobile" id="mobileNav" hidden>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="cleaning-dilution-calculator">Cleaning Dilution</a></li>
