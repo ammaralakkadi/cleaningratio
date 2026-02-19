@@ -50,61 +50,76 @@
   color: var(--color-text);
 }
 
-.nav-desktop a[aria-current="page"] {
-  font-weight: 600;
-}
-
 /* ---------- Hamburger (Mobile) ---------- */
 .hamburger {
+  position: relative; /* critical: anchors the bars */
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   width: 44px;
   height: 44px;
   padding: 0;
+
   border-radius: 999px;
-  background-color: var(--color-bg-soft);
-  border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-sm);
+  background: rgba(246, 247, 249, 0.82);
+  border: 1px solid rgba(224, 224, 224, 0.9);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
+
   transition:
     transform 180ms ease,
+    box-shadow 180ms ease,
     background-color 180ms ease;
 }
 
 .hamburger:hover {
-  background-color: #eceef2;
   transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
 }
 
 .hamburger span {
   position: absolute;
+  left: 50%;
+  top: 50%;
+
   width: 20px;
   height: 2px;
-  background-color: var(--color-text);
   border-radius: 999px;
+  background-color: var(--color-text);
+
+  transform-origin: center;
   transition:
     transform 180ms ease,
-    opacity 180ms ease;
+    opacity 180ms ease,
+    width 180ms ease;
 }
 
+/* Default “menu” */
 .hamburger span:nth-child(1) {
-  transform: translateY(-6px);
+  transform: translate(-50%, -50%) translateY(-6px);
 }
 .hamburger span:nth-child(2) {
-  transform: translateY(0);
+  transform: translate(-50%, -50%);
+  width: 16px; /* subtle designer touch */
+  opacity: 0.92;
 }
 .hamburger span:nth-child(3) {
-  transform: translateY(6px);
+  transform: translate(-50%, -50%) translateY(6px);
 }
 
+/* “X” state */
 .hamburger[aria-expanded="true"] span:nth-child(1) {
-  transform: rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .hamburger[aria-expanded="true"] span:nth-child(2) {
   opacity: 0;
+  width: 20px;
 }
 .hamburger[aria-expanded="true"] span:nth-child(3) {
-  transform: rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 /* ---------- Mobile Navigation ---------- */
@@ -173,33 +188,17 @@ body.menu-open::before {
 /* ---------- Hero Sections ---------- */
 .calculator-hero,
 .home-hero {
-  margin-bottom: var(--space-6);
-  padding-block: var(--space-7);
+  margin-bottom: var(--space-5);
+  padding-block: var(--space-4);
 }
 
 .home-hero {
-  padding-top: var(--space-6);
-  text-align: center;
+  padding-top: var(--space-3);
+  text-align: left;
 }
 
 .home-hero::before {
-  content: "";
-  position: absolute;
-  inset: -120px -40px auto -40px;
-  height: 420px;
-  background:
-    radial-gradient(
-      600px 220px at 50% 30%,
-      rgba(31, 79, 216, 0.14),
-      transparent 60%
-    ),
-    radial-gradient(
-      520px 200px at 65% 10%,
-      rgba(124, 58, 237, 0.12),
-      transparent 55%
-    );
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 
 .home-hero {
@@ -289,6 +288,36 @@ body.menu-open::before {
   color: var(--color-text-muted);
 }
 
+/* ---------- Home Hero (Simple, calculator-first) ---------- */
+.hero-simple {
+  padding: 18px 0 0;
+  text-align: center;
+}
+
+.hero-title-simple {
+  color: #0b0c0f;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+}
+
+.hero-subtitle-simple {
+  margin: 6px 0 14px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: none;
+}
+
+.tools-grid-hero {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.hero-footnote-simple {
+  margin-top: 14px;
+  font-size: 0.92rem;
+}
+
 .note {
   margin-top: var(--space-3);
   font-size: var(--font-size-sm);
@@ -357,6 +386,18 @@ body.menu-open::before {
     border-color 180ms ease;
 }
 
+.tool-card-link,
+.tool-card-link * {
+  text-decoration: none !important;
+}
+
+.tool-card-link {
+  display: block;
+  color: inherit;
+  height: 100%;
+  cursor: pointer;
+}
+
 .tool-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
@@ -370,6 +411,9 @@ body.menu-open::before {
 .tool-link {
   display: inline-block;
   margin-top: var(--space-3);
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* ---------- Footer ---------- */
@@ -408,6 +452,11 @@ body.menu-open::before {
 @media (min-width: 1024px) {
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Move the 3 cards DOWN on desktop only */
+  .tools-grid-hero {
+    margin-top: 100px; /* change 40 -> 50 -> 60 until you like it */
   }
 
   .calculator-card,

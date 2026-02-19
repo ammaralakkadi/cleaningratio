@@ -95,53 +95,47 @@ select {
   font-weight: 500;
 }
 
-/* ---------- Navigation Active State ---------- */
+/* ---------- Navigation (Elite Hover) ---------- */
 .logo a,
 .nav-desktop a {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+
   text-decoration: none;
-}
+  color: var(--color-text);
 
-.logo a:hover,
-.nav-desktop a:hover {
-  text-decoration: none;
-}
+  padding: 8px 12px;
+  border-radius: 12px;
 
-.logo a::after,
-.nav-desktop a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 100%;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--color-primary), #7c3aed);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 180ms ease;
-}
-
-.logo a:hover::after,
-.nav-desktop a:hover::after {
-  transform: scaleX(1);
-}
-
-.nav-desktop a {
-  padding: 8px 10px;
-  border-radius: 10px;
   transition:
     transform 180ms ease,
-    background-color 180ms ease;
+    background-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
+/* Desktop nav: hover = soft “pill” highlight (not underline) */
 .nav-desktop a:hover {
-  background-color: var(--color-bg-soft);
+  background: rgba(31, 79, 216, 0.08);
+  box-shadow: 0 10px 22px rgba(31, 79, 216, 0.12);
   transform: translateY(-1px);
 }
 
+/* Logo hover: even more subtle */
+.logo a:hover {
+  background: rgba(31, 79, 216, 0.06);
+  box-shadow: 0 10px 22px rgba(31, 79, 216, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Current page (desktop) */
+.nav-desktop a[aria-current="page"] {
+  font-weight: 700;
+  background: rgba(31, 79, 216, 0.1);
+}
+
+/* Mobile */
 .nav-mobile a {
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .nav-mobile a:hover {
