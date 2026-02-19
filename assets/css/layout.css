@@ -20,6 +20,10 @@
 .site-header {
   border-bottom: 1px solid var(--color-border);
   background-color: var(--color-bg);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-container {
@@ -27,6 +31,9 @@
   align-items: center;
   justify-content: space-between;
   min-height: 64px;
+
+  /* anchor for the dropdown panel */
+  position: relative;
 }
 
 .logo a {
@@ -52,7 +59,7 @@
 
 /* ---------- Hamburger (Mobile) ---------- */
 .hamburger {
-  position: relative; /* critical: anchors the bars */
+  position: relative; /* anchors the bars */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -62,22 +69,24 @@
   padding: 0;
 
   border-radius: 999px;
-  background: rgba(246, 247, 249, 0.82);
-  border: 1px solid rgba(224, 224, 224, 0.9);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
 
-  -webkit-backdrop-filter: blur(10px) saturate(160%);
-  backdrop-filter: blur(10px) saturate(160%);
+  /* Dribbble-like: looks transparent until hover */
+  background: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
 
   transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    background-color 180ms ease;
+    transform 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
 }
 
 .hamburger:hover {
   transform: translateY(-1px);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
+
+  /* subtle hover surface like Dribbble */
+  background: rgba(17, 17, 19, 0.06);
+  border-color: rgba(17, 17, 19, 0.1);
 }
 
 .hamburger span {
@@ -88,7 +97,7 @@
   width: 20px;
   height: 2px;
   border-radius: 999px;
-  background-color: var(--color-text);
+  background-color: rgba(13, 12, 34, 0.92);
 
   transform-origin: center;
   transition:
@@ -127,39 +136,45 @@ body.menu-open {
   overflow: hidden;
 }
 
+/* remove the huge full-screen overlay (Dribbble-style is cleaner) */
 body.menu-open::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(10, 10, 12, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 900;
+  content: none;
 }
 
 .nav-mobile {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  width: min(360px, 86vw);
+  /* dropdown panel under header (not a full-height drawer) */
+  position: absolute;
+  top: calc(64px + 10px);
+  left: 0;
+  right: 0;
+
+  width: min(520px, calc(100% - 24px));
+  margin: 0 auto;
+
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
-  border-radius: 18px;
-  box-shadow: var(--shadow-md);
-  z-index: 1000;
+  border-radius: 16px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.14);
+  z-index: 1200;
 
-  transform: translateX(110%);
+  /* smooth dropdown motion */
+  transform: translateY(-10px);
   opacity: 0;
+  pointer-events: none;
+
   transition:
     transform 180ms ease,
     opacity 180ms ease;
-  overflow: hidden;
+
+  /* never “covers the entire screen” */
+  max-height: calc(100vh - 92px);
+  overflow: auto;
 }
 
 .nav-mobile.is-open {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-mobile ul {
@@ -174,10 +189,29 @@ body.menu-open::before {
 }
 
 .nav-mobile a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   padding: 12px 12px;
   border-radius: 12px;
   color: var(--color-text);
+
+  text-decoration: none; /* remove underline */
+  font-weight: 600; /* cleaner hierarchy */
+
+  border: 1px solid transparent;
+
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.nav-mobile a:hover {
+  background-color: var(--color-bg-soft);
+  border-color: rgba(31, 79, 216, 0.12);
+  transform: translateY(-1px);
 }
 
 /* ---------- Main Content ---------- */
