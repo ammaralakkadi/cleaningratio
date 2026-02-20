@@ -75,6 +75,8 @@
   border: 1px solid transparent;
   box-shadow: none;
 
+  -webkit-tap-highlight-color: transparent;
+
   transition:
     transform 160ms ease,
     background-color 160ms ease,
@@ -87,6 +89,16 @@
   /* subtle hover surface like Dribbble */
   background: rgba(17, 17, 19, 0.06);
   border-color: rgba(17, 17, 19, 0.1);
+}
+.hamburger:active {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.hamburger:focus {
+  outline: none;
 }
 
 .hamburger span {
@@ -142,46 +154,26 @@ body.menu-open::before {
 }
 
 .nav-mobile {
-  /* dropdown panel under header (not a full-height drawer) */
-  position: absolute;
-  top: calc(64px + 10px);
+  position: fixed;
+  top: 64px; /* perfectly aligned under header */
   left: 0;
-  right: 0;
-
-  width: min(520px, calc(100% - 24px));
-  margin: 0 auto;
+  width: 100%;
 
   background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid var(--color-border);
   z-index: 1200;
 
-  /* smooth dropdown motion */
-  transform: translateY(-10px);
-  opacity: 0;
+  /* Unroll from the top edge */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   pointer-events: none;
 
-  transition:
-    transform 180ms ease,
-    opacity 180ms ease;
-
-  /* never “covers the entire screen” */
-  max-height: calc(100vh - 92px);
-  overflow: auto;
+  transition: clip-path 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: clip-path;
 }
 
 .nav-mobile.is-open {
-  transform: translateY(0);
-  opacity: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   pointer-events: auto;
-}
-
-.nav-mobile ul {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 6px;
 }
 
 .nav-mobile li {
@@ -196,22 +188,47 @@ body.menu-open::before {
   padding: 12px 12px;
   border-radius: 12px;
   color: var(--color-text);
-
-  text-decoration: none; /* remove underline */
-  font-weight: 600; /* cleaner hierarchy */
+  text-decoration: none;
+  font-weight: 650;
 
   border: 1px solid transparent;
+
+  -webkit-tap-highlight-color: transparent;
+
+  /* start hidden for stagger reveal */
+  opacity: 0;
+  transform: translateY(30px);
 
   transition:
     background-color 160ms ease,
     border-color 160ms ease,
-    transform 160ms ease;
+    opacity 500ms ease,
+    transform 600ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .nav-mobile a:hover {
   background-color: var(--color-bg-soft);
   border-color: rgba(31, 79, 216, 0.12);
   transform: translateY(-1px);
+}
+
+.nav-mobile.is-open a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger timing (targets your <li> structure) */
+.nav-mobile.is-open li:nth-child(1) a {
+  transition-delay: 0.15s;
+}
+.nav-mobile.is-open li:nth-child(2) a {
+  transition-delay: 0.22s;
+}
+.nav-mobile.is-open li:nth-child(3) a {
+  transition-delay: 0.29s;
+}
+.nav-mobile.is-open li:nth-child(4) a {
+  transition-delay: 0.36s;
 }
 
 /* ---------- Main Content ---------- */
