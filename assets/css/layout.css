@@ -155,24 +155,39 @@ body.menu-open::before {
 
 .nav-mobile {
   position: fixed;
-  top: 64px; /* perfectly aligned under header */
-  left: 0;
-  width: 100%;
+  top: 74px; /* slightly below the header for a floating look */
+  right: 12px;
+
+  width: min(320px, 90vw);
+  height: auto;
+  max-height: calc(100vh - 100px);
 
   background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   z-index: 1200;
 
-  /* Unroll from the top edge */
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  /* reveal from the hamburger corner (top-right) */
+  clip-path: circle(0% at 100% 0%);
+
+  transform: translateY(-10px);
+  opacity: 0;
   pointer-events: none;
 
-  transition: clip-path 700ms cubic-bezier(0.19, 1, 0.22, 1);
-  will-change: clip-path;
+  transition:
+    clip-path 700ms cubic-bezier(0.19, 1, 0.22, 1),
+    transform 600ms cubic-bezier(0.19, 1, 0.22, 1),
+    opacity 400ms ease;
+
+  will-change: clip-path, transform;
+  overflow: hidden;
 }
 
 .nav-mobile.is-open {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: circle(150% at 100% 0%);
+  transform: translateY(0);
+  opacity: 1;
   pointer-events: auto;
 }
 
@@ -215,6 +230,12 @@ body.menu-open::before {
 .nav-mobile.is-open a {
   opacity: 1;
   transform: translateY(0);
+}
+
+.nav-mobile ul {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
 }
 
 /* Stagger timing (targets your <li> structure) */
