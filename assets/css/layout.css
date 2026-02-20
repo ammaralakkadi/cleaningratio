@@ -155,8 +155,8 @@ body.menu-open::before {
 
 .nav-mobile {
   position: fixed;
-  top: 74px; /* slightly below the header for a floating look */
-  right: 12px;
+  top: 64px; /* exact header height */
+  right: 0;
 
   width: min(320px, 90vw);
   height: auto;
@@ -164,30 +164,25 @@ body.menu-open::before {
 
   background-color: var(--color-bg);
   border: 1px solid var(--color-border);
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: none; /* merges with header */
+  border-radius: 0 0 0 20px; /* only bottom-left rounded */
+
+  box-shadow: none; /* completely flat */
+
   z-index: 1200;
 
-  /* reveal from the hamburger corner (top-right) */
+  /* Corner reveal */
   clip-path: circle(0% at 100% 0%);
-
-  transform: translateY(-10px);
-  opacity: 0;
   pointer-events: none;
 
-  transition:
-    clip-path 700ms cubic-bezier(0.19, 1, 0.22, 1),
-    transform 600ms cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 400ms ease;
+  transition: clip-path 700ms cubic-bezier(0.19, 1, 0.22, 1);
+  will-change: clip-path;
 
-  will-change: clip-path, transform;
   overflow: hidden;
 }
 
 .nav-mobile.is-open {
   clip-path: circle(150% at 100% 0%);
-  transform: translateY(0);
-  opacity: 1;
   pointer-events: auto;
 }
 
