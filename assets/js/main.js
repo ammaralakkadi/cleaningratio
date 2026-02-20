@@ -5,16 +5,19 @@
 ===================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-  /* ---------- Mobile Hamburger Menu ---------- */
+  /* ---------- Mobile Hamburger Menu (Optimized for Smooth Transition) ---------- */
   const hamburger = document.querySelector(".hamburger");
   const mobileNav = document.querySelector(".nav-mobile");
 
   const openMenu = () => {
     if (!hamburger || !mobileNav) return;
-    document.body.classList.add("menu-open");
-    hamburger.setAttribute("aria-expanded", "true");
     mobileNav.hidden = false;
-    mobileNav.classList.add("is-open");
+
+    requestAnimationFrame(() => {
+      document.body.classList.add("menu-open");
+      hamburger.setAttribute("aria-expanded", "true");
+      mobileNav.classList.add("is-open");
+    });
   };
 
   const closeMenu = () => {
@@ -23,12 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.setAttribute("aria-expanded", "false");
     mobileNav.classList.remove("is-open");
 
-    // allow drawer transition to finish, then hide
     window.setTimeout(() => {
       if (hamburger.getAttribute("aria-expanded") === "false") {
         mobileNav.hidden = true;
       }
-    }, 180);
+    }, 700);
   };
 
   if (hamburger && mobileNav) {
