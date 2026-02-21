@@ -10,6 +10,30 @@
       content="CleaningRatio provides simple, safe calculators for cleaning dilution, bleach ratios, and essential oil mixing."
     />
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/img/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon-180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/img/favicon-512.png"
+    />
+
     <!-- Main CSS pointer -->
     <link rel="stylesheet" href="assets/css/style-v1.css" />
   </head>
@@ -19,23 +43,19 @@
     <header class="site-header">
       <div class="header-container">
         <div class="logo">
-          <a href="index.html">CleaningRatio</a>
+          <a href="index.html" aria-label="CleaningRatio home">
+            <span class="logo-word-cleaning">Cleaning</span
+            ><span class="logo-word-ratio">Ratio</span>
+          </a>
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="nav-desktop">
           <ul>
-            <li>
-              <a href="cleaning-dilution-calculator.html">Cleaning Dilution</a>
-            </li>
-            <li>
-              <a href="bleach-dilution-calculator.html">Bleach Dilution</a>
-            </li>
-            <li>
-              <a href="essential-oil-ratio-calculator.html"
-                >Essential Oil Ratio</a
-              >
-            </li>
+            <li><a href="index.html#calculators">Calculators</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -55,16 +75,11 @@
       <!-- Mobile Navigation -->
       <nav class="nav-mobile" id="mobileNav" hidden>
         <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li>
-            <a href="cleaning-dilution-calculator.html">Cleaning Dilution</a>
-          </li>
-          <li><a href="bleach-dilution-calculator.html">Bleach Dilution</a></li>
-          <li>
-            <a href="essential-oil-ratio-calculator.html"
-              >Essential Oil Ratio</a
-            >
-          </li>
+          <li><a href="index.html#calculators">Calculators</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </header>
@@ -127,11 +142,55 @@
 
     <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
-      <p>
-        © <span id="year"></span> CleaningRatio ·
-        <a href="privacy.html">Privacy</a> ·
-        <a href="terms.html">Terms</a>
-      </p>
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="index.html"
+              class="footer-logo"
+              aria-label="CleaningRatio home"
+            >
+              <span class="footer-logo-cleaning">Cleaning</span
+              ><span class="footer-logo-ratio">Ratio</span>
+            </a>
+            <p class="footer-subtitle">
+              Cleaning dilution calculators and mixing guides for household and
+              commercial use.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="index.html#calculators">Calculators</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> CleaningRatio. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- ================= JS ================= -->
