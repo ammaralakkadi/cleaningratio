@@ -129,6 +129,8 @@ select {
 /* ---------- Tool Cards (Homepage) ---------- */
 .tool-card p {
   margin-top: var(--space-2);
+  line-height: 1.45;
+  color: var(--color-text-muted);
 }
 
 .tool-link {

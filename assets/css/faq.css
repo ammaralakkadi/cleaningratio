@@ -1,0 +1,199 @@
+/* =====================================================
+   faq.css
+   CleaningRatio – FAQ page styling
+   Premium split layout (no boxed page pattern)
+===================================================== */
+
+/* ---------- FAQ Page Wrapper ---------- */
+.faq-page {
+  padding-block: clamp(20px, 4vw, 48px) var(--space-6);
+}
+
+/* ---------- Main FAQ Shell ---------- */
+.faq-shell {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+  width: 100%;
+}
+
+/* ---------- Left Intro Column ---------- */
+.faq-intro {
+  position: sticky;
+  top: 130px;
+  padding-top: 8px;
+}
+
+.faq-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 60, 125, 0.14);
+  background: rgba(15, 60, 125, 0.06);
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.faq-intro h1 {
+  margin: 0 0 10px;
+  color: #0b0c0f;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  max-width: 13ch;
+}
+
+.faq-subtitle {
+  margin: 0;
+  max-width: 34ch;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+/* ---------- Right FAQ Panel ---------- */
+.faq-panel {
+  min-width: 0;
+  padding-top: 10px;
+}
+
+.faq-list {
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+  padding-inline: clamp(8px, 1vw, 12px);
+}
+
+/* ---------- Accordion Items ---------- */
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding: 15px 40px 15px 4px;
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 0.97rem;
+  line-height: 1.35;
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron */
+.faq-item summary::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid #64748b;
+  border-bottom: 2px solid #64748b;
+  transform: translateY(-65%) rotate(45deg);
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.faq-item[open] summary::after {
+  transform: translateY(-35%) rotate(-135deg);
+  border-color: var(--color-primary);
+}
+
+.faq-item[open] summary {
+  color: #0b0c0f;
+}
+
+.faq-answer {
+  padding: 0 0 16px;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  font-size: 0.96rem;
+  max-width: 66ch;
+}
+
+.faq-answer a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Focus states ---------- */
+.faq-item summary:focus-visible {
+  outline: 2px solid rgba(15, 60, 125, 0.28);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* ---------- Tablet / Mobile ---------- */
+@media (max-width: 900px) {
+  .faq-shell {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .faq-intro {
+    position: static;
+  }
+
+  .faq-intro h1 {
+    max-width: none;
+  }
+
+  .faq-subtitle {
+    max-width: 60ch;
+  }
+}
+
+@media (max-width: 520px) {
+  .faq-page {
+    padding-block: var(--space-4) var(--space-5);
+  }
+
+  .faq-shell {
+    gap: var(--space-4);
+  }
+
+  .faq-list {
+    padding-inline: 6px;
+  }
+
+  .faq-item summary {
+    padding: 16px 34px 16px 6px;
+    font-size: 0.96rem;
+  }
+
+  .faq-item summary::after {
+    right: 8px;
+  }
+
+  .faq-answer {
+    padding: 0 6px 14px;
+  }
+
+  .faq-answer p {
+    font-size: 0.94rem;
+  }
+}
