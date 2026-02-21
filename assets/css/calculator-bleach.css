@@ -14,10 +14,18 @@
 /* ---------- Hero Emphasis ---------- */
 .calculator-hero h1 {
   max-width: 720px;
+  color: #0b0c0f;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  line-height: 1.1;
 }
 
 .calculator-hero .subtitle {
-  font-size: var(--font-size-lg);
+  margin: 6px 0 14px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .calculator-hero .note {
@@ -46,7 +54,7 @@
 }
 
 .input-inline select {
-  min-width: 90px;
+  min-width: 110px;
 }
 
 /* ---------- Actions ---------- */

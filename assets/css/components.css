@@ -42,8 +42,24 @@ select {
   width: 100%;
 }
 
+input[type="number"] {
+  font-variant-numeric: tabular-nums;
+  padding-right: 10px;
+}
+
 select {
   background-color: #fff;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  padding-right: 42px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M2.25 4.75 7 9.25l4.75-4.5' fill='none' stroke='%231a1a1a' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px 14px;
 }
 
 /* ---------- Cards ---------- */
@@ -56,17 +72,41 @@ select {
   box-shadow: var(--shadow-sm);
 }
 
+.result-card {
+  animation: resultReveal 220ms ease-out;
+}
+
+@keyframes resultReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ---------- Result Highlight ---------- */
 .result-card h2 {
   margin-bottom: var(--space-3);
 }
 
+.results-list li + li {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
 .results-list strong {
   color: var(--color-text);
+  font-weight: 600;
 }
 
 .results-list span {
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ---------- Safety Boxes ---------- */
