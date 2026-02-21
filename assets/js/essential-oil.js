@@ -73,5 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
     resultDropRatio.textContent = `1 drop per ${ratio} ml`;
 
     resultCard.hidden = false;
+    resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });

@@ -68,5 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
     resultRatio.textContent = `1 : ${ratioWater.toFixed(0)}`;
 
     resultCard.hidden = false;
+    resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });

@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultCleaner = document.getElementById("result-cleaner");
   const resultWater = document.getElementById("result-water");
   const resultRatio = document.getElementById("result-ratio");
+  const formFeedback = document.getElementById("form-feedback");
 
   function toMilliliters(value, unit) {
     return unit === "l" ? value * 1000 : value;
@@ -31,6 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
     return value.toFixed(0) + " ml";
   }
 
+  function showFeedback(message) {
+    formFeedback.textContent = message;
+    formFeedback.hidden = false;
+  }
+
+  function clearFeedback() {
+    formFeedback.textContent = "";
+    formFeedback.hidden = true;
+  }
+
   calculateBtn.addEventListener("click", () => {
     const cleanerConcentration = parseFloat(cleanerConcentrationEl.value);
     const finalVolumeInput = parseFloat(finalVolumeEl.value);
@@ -40,14 +51,40 @@ document.addEventListener("DOMContentLoaded", () => {
     if (
       isNaN(cleanerConcentration) ||
       isNaN(finalVolumeInput) ||
-      isNaN(desiredStrength) ||
-      cleanerConcentration <= 0 ||
-      desiredStrength <= 0 ||
-      desiredStrength >= cleanerConcentration
+      isNaN(desiredStrength)
     ) {
       resultCard.hidden = true;
+      showFeedback("Please fill in all fields before calculating.");
       return;
     }
+
+    if (cleanerConcentration <= 0) {
+      resultCard.hidden = true;
+      showFeedback("Cleaner concentration must be more than 0%.");
+      return;
+    }
+
+    if (finalVolumeInput <= 0) {
+      resultCard.hidden = true;
+      showFeedback("Final solution volume must be more than 0.");
+      return;
+    }
+
+    if (desiredStrength <= 0) {
+      resultCard.hidden = true;
+      showFeedback("Desired final strength must be more than 0%.");
+      return;
+    }
+
+    if (desiredStrength >= cleanerConcentration) {
+      resultCard.hidden = true;
+      showFeedback(
+        "Desired final strength must be lower than the cleaner concentration to calculate a dilution.",
+      );
+      return;
+    }
+
+    clearFeedback();
 
     const finalVolumeMl = toMilliliters(finalVolumeInput, volumeUnit);
 
@@ -64,11 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
     resultWater.textContent = formatAmount(waterVolume);
     resultRatio.textContent = `1 : ${ratioWater.toFixed(1)}`;
 
+    clearFeedback();
     resultCard.hidden = false;
+    resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   /* Reset handling */
   form.addEventListener("reset", () => {
     resultCard.hidden = true;
+    clearFeedback();
   });
 });
