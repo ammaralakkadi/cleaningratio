@@ -437,7 +437,18 @@ body.menu-open::before {
 .form-actions {
   display: flex;
   gap: var(--space-3);
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.form-actions button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-actions button.secondary {
+  font-weight: 600;
 }
 
 /* ---------- Results Layout ---------- */
@@ -466,6 +477,10 @@ body.menu-open::before {
   display: grid;
   gap: var(--space-5);
   margin-top: var(--space-4);
+
+  /* Premium: avoid full-width “cheap” cards on tablets */
+  max-width: 880px;
+  margin-inline: auto;
 }
 
 .tool-card {
@@ -545,6 +560,11 @@ body.menu-open::before {
   font-size: var(--font-size-lg);
   letter-spacing: 0;
   line-height: 1.2;
+  color: inherit;
+}
+
+.footer-logo:hover {
+  text-decoration: none;
 }
 
 .footer-logo-cleaning {
@@ -614,6 +634,41 @@ body.menu-open::before {
    Responsive Enhancements
 ===================================================== */
 
+@media (max-width: 767px) {
+  .tools-grid {
+    max-width: 400px;
+    margin-inline: auto;
+    gap: 10px;
+  }
+
+  .tool-card {
+    padding: 18px 20px;
+    border-radius: 16px;
+    border-color: rgba(224, 224, 224, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .tool-card h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .tool-card p {
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .tool-link {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+}
+
 /* ---------- Tablet & Up ---------- */
 @media (min-width: 768px) {
   .hamburger {
@@ -629,7 +684,8 @@ body.menu-open::before {
   }
 
   .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
   }
 }
 
