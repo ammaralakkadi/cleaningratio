@@ -22,22 +22,76 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "bleach dilution safety",
     },
     {
-      title: "How to Mix All-Purpose Cleaner in a Spray Bottle",
-      url: "blogs/how-to-mix-all-purpose-cleaner-spray-bottle.html",
-      tag: "Dilution",
+      title: "Can You Mix Bleach and Vinegar?",
+      url: "blogs/can-you-mix-bleach-and-vinegar.html",
+      tag: "Safety",
       description:
-        "Simple ratio steps for spray bottle mixing with quick examples, measuring tips, and label-first safety reminders.",
-      meta: "6 min read • Spray bottle mixing",
-      category: "dilution spray-bottle",
+        "No—don’t mix bleach and vinegar. Short safety reason, common mistakes, and what to do instead.",
+      meta: "4 min read • Safety",
+      category: "safety bleach mixing",
     },
     {
-      title: "Essential Oil Dilution Ratios for Home Cleaning",
-      url: "blogs/essential-oil-dilution-ratios-for-cleaning.html",
-      tag: "Essential Oils",
+      title: "Bleach Dilution Mistakes to Avoid",
+      url: "blogs/bleach-dilution-mistakes-to-avoid.html",
+      tag: "Bleach",
       description:
-        "A clear starting guide to essential oil mixing ratios for home cleaning blends, with practical examples and safe usage notes.",
-      meta: "8 min read • Essential oils",
-      category: "essential-oil dilution",
+        "The most common bleach dilution mistakes—too strong mixes, bad measuring, wrong surfaces, and what to do instead.",
+      meta: "6 min read • Bleach safety",
+      category: "bleach dilution mistakes safety",
+    },
+    {
+      title: "What Does 1:10 Dilution Mean?",
+      url: "blogs/what-does-1-to-10-dilution-mean.html",
+      tag: "Dilution",
+      description:
+        "A simple explanation of 1:10 dilution with real examples for 500 mL bottles, 1 liter mixes, and buckets.",
+      meta: "5 min read • Dilution basics",
+      category: "dilution ratio basics",
+    },
+    {
+      title: "How to Calculate Dilution Ratio (Concentrate to Final Volume)",
+      url: "blogs/how-to-calculate-dilution-ratio.html",
+      tag: "Dilution",
+      description:
+        "A practical way to calculate dilution ratios and exact amounts for bottles and buckets—plus when a calculator saves time.",
+      meta: "7 min read • Calculator basics",
+      category: "dilution ratio calculator",
+    },
+    {
+      title: "How Much Cleaner Concentrate for a 500 mL Spray Bottle?",
+      url: "blogs/how-much-concentrate-for-500ml-spray-bottle.html",
+      tag: "Dilution",
+      description:
+        "Quick 500 mL mixing examples for common ratios (1:10–1:100), plus simple measuring steps and a calculator link.",
+      meta: "5 min read • 500 mL bottle",
+      category: "dilution spray-bottle 500ml",
+    },
+    {
+      title: "How Much Cleaner Concentrate for 1 Liter of Solution?",
+      url: "blogs/how-much-concentrate-for-1-liter.html",
+      tag: "Dilution",
+      description:
+        "Quick 1-liter mixing examples for common ratios (1:10–1:100), plus simple measuring steps and a calculator link.",
+      meta: "5 min read • 1 liter mix",
+      category: "dilution 1-liter",
+    },
+    {
+      title: "Cleaning Dilution for a Mop Bucket (3L, 5L, 10L)",
+      url: "blogs/mop-bucket-cleaning-dilution-examples.html",
+      tag: "Dilution",
+      description:
+        "Practical mop bucket dilution examples for 3L, 5L, and 10L, plus common ratios and measuring tips to avoid guesswork.",
+      meta: "6 min read • Mop bucket mixing",
+      category: "dilution mop-bucket",
+    },
+    {
+      title: "How to Dilute Bleach for a Spray Bottle (500 mL, 1L)",
+      url: "blogs/how-to-dilute-bleach-for-spray-bottle.html",
+      tag: "Bleach",
+      description:
+        "Exact bleach spray bottle dilution examples for 500 mL, 750 mL, and 1 liter. Simple measuring steps, common mistakes, and label-first safety notes.",
+      meta: "6 min read • Spray bottle bleach",
+      category: "bleach dilution spray-bottle",
     },
   ];
 
