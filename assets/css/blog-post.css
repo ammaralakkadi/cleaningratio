@@ -17,13 +17,13 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  color: var(--color-muted);
+  color: var(--color-text-muted);
   font-size: 0.92rem;
   margin-bottom: 18px;
 }
 
 .article-breadcrumb a {
-  color: var(--color-muted);
+  color: var(--color-text-muted);
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: var(--color-text-muted);
 }
 
 .article-header h1 {
@@ -57,7 +57,7 @@
 
 .article-dek {
   margin: 12px 0 0;
-  color: var(--color-muted);
+  color: var(--color-text-muted);
   line-height: 1.65;
   font-size: 1rem;
   max-width: 68ch;
@@ -69,7 +69,7 @@
   gap: 8px;
   align-items: center;
   margin-top: 12px;
-  color: var(--color-muted);
+  color: var(--color-text-muted);
   font-size: 0.9rem;
 }
 
@@ -104,16 +104,12 @@
 
 .article-section a:hover {
   color: var(--color-primary-dark, var(--color-primary));
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 3px;
+  text-decoration: none;
 }
 
 .article-section a:focus-visible {
   color: var(--color-primary-dark, var(--color-primary));
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 3px;
+  text-decoration: none;
 }
 
 .article-list {
@@ -133,7 +129,7 @@
 
 .article-note {
   margin-top: 10px;
-  color: var(--color-muted);
+  color: var(--color-text-muted);
 }
 
 .table-wrap {
