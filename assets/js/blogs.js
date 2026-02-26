@@ -58,6 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "dilution ratio calculator",
     },
     {
+      title: "How to Read Cleaning Dilution Instructions on Labels",
+      url: "blogs/how-to-read-cleaning-dilution-labels.html",
+      tag: "Dilution",
+      description:
+        "A simple guide to reading dilution labels (ratios, mL per liter, and %), with quick examples and calculator links.",
+      meta: "6 min read • Label decoding",
+      category: "dilution labels instructions",
+    },
+    {
       title: "How Much Cleaner Concentrate for a 500 mL Spray Bottle?",
       url: "blogs/how-much-concentrate-for-500ml-spray-bottle.html",
       tag: "Dilution",
