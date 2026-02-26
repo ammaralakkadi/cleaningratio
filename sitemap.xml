@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://cleaningratio.com/</loc>
-  </url>
+  <!-- Core -->
+  <url><loc>https://cleaningratio.com/</loc></url>
+  <url><loc>https://cleaningratio.com/blog.html</loc></url>
+  <url><loc>https://cleaningratio.com/about.html</loc></url>
+  <url><loc>https://cleaningratio.com/contact.html</loc></url>
+  <url><loc>https://cleaningratio.com/faq.html</loc></url>
 
-  <url>
-    <loc>https://cleaningratio.com/cleaning-dilution-calculator.html</loc>
-  </url>
+  <!-- Calculators -->
+  <url><loc>https://cleaningratio.com/cleaning-dilution-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/bleach-dilution-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/essential-oil-ratio-calculator.html</loc></url>
 
-  <url>
-    <loc>https://cleaningratio.com/bleach-dilution-calculator.html</loc>
-  </url>
+  <!-- Legal -->
+  <url><loc>https://cleaningratio.com/privacy.html</loc></url>
+  <url><loc>https://cleaningratio.com/terms.html</loc></url>
+  <url><loc>https://cleaningratio.com/disclaimer.html</loc></url>
+  <url><loc>https://cleaningratio.com/cookies.html</loc></url>
 
-  <url>
-    <loc>https://cleaningratio.com/essential-oil-ratio-calculator.html</loc>
-  </url>
+  <!-- Blog posts -->
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-floor-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-10-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-calculate-dilution-ratio.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-read-cleaning-dilution-labels.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/mop-bucket-cleaning-dilution-examples.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-concentrate-for-1-liter.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-concentrate-for-500ml-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/bleach-dilution-mistakes-to-avoid.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-vinegar.html</loc></url>
 
 </urlset>
