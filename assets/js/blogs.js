@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "dilution 1-liter",
     },
     {
-      title: "Cleaning Dilution for a Mop Bucket (3L, 5L, 10L)",
+      title: "Cleaning Dilution for a Mop Bucket (3L, 5L, 10L Examples)",
       url: "blogs/mop-bucket-cleaning-dilution-examples.html",
       tag: "Dilution",
       description:
@@ -94,13 +94,103 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "dilution mop-bucket",
     },
     {
-      title: "How to Dilute Bleach for a Spray Bottle (500 mL, 1L)",
+      title: "How to Dilute Bleach for a Spray Bottle",
       url: "blogs/how-to-dilute-bleach-for-spray-bottle.html",
       tag: "Bleach",
       description:
         "Exact bleach spray bottle dilution examples for 500 mL, 750 mL, and 1 liter. Simple measuring steps, common mistakes, and label-first safety notes.",
       meta: "6 min read • Spray bottle bleach",
       category: "bleach dilution spray-bottle",
+    },
+    {
+      title: "How to Dilute Cleaner for a 32 oz Spray Bottle",
+      url: "blogs/how-to-dilute-cleaner-for-32-oz-spray-bottle.html",
+      tag: "Dilution",
+      description:
+        "Exact, repeatable mixing for a 32 oz spray bottle using common dilution ratios. Fast steps, mistakes to avoid, and calculator help.",
+      meta: "6 min read • 32 oz bottle",
+      category: "dilution spray-bottle 32oz",
+    },
+    {
+      title: "What Does 1:64 Dilution Mean?",
+      url: "blogs/what-does-1-to-64-dilution-mean.html",
+      tag: "Dilution",
+      description:
+        "A clear explanation of 1:64 dilution (parts vs total), how to avoid mix-ups, and how to convert it to any container size.",
+      meta: "5 min read • Ratio basics",
+      category: "dilution ratio basics 1-64",
+    },
+    {
+      title: "What Does 1:128 Dilution Mean?",
+      url: "blogs/what-does-1-to-128-dilution-mean.html",
+      tag: "Dilution",
+      description:
+        "What 1:128 means in plain language and why small measuring errors matter. Simple guidance to convert it for bottles and buckets.",
+      meta: "5 min read • Ratio basics",
+      category: "dilution ratio basics 1-128",
+    },
+    {
+      title: "How Much Concentrate for 1 Gallon of Water?",
+      url: "blogs/how-much-concentrate-for-1-gallon-of-water.html",
+      tag: "Dilution",
+      description:
+        "A label-first way to get the right concentrate amount for 1 gallon—whether your label uses ratios or dosing like “oz per gallon.”",
+      meta: "6 min read • 1 gallon mixing",
+      category: "dilution gallon mixing",
+    },
+    {
+      title: "How to Scale a Cleaning Label That Says “mL per Liter”",
+      url: "blogs/how-to-scale-ml-per-liter-cleaning-labels.html",
+      tag: "Dilution",
+      description:
+        "If your label says “mL per liter,” scale it to any bottle or bucket size without guessing—plus the common label wording traps to watch.",
+      meta: "6 min read • Label scaling",
+      category: "dilution labels ml-per-liter",
+    },
+    {
+      title: "How to Mix Cleaning Solution for a 5-Gallon Bucket",
+      url: "blogs/how-to-mix-cleaning-solution-for-5-gallon-bucket.html",
+      tag: "Dilution",
+      description:
+        "A practical way to mix a 5-gallon bucket solution correctly, avoid over-strong mixes, and keep a repeatable recipe for mopping.",
+      meta: "6 min read • 5-gallon bucket",
+      category: "dilution bucket 5-gallon",
+    },
+    {
+      title: "Bleach Dilution for Laundry: A Practical, Label-First Guide",
+      url: "blogs/bleach-dilution-for-laundry-a-practical-label-first-guide.html",
+      tag: "Bleach",
+      description:
+        "Laundry bleach basics with a conservative, label-first approach: fabric checks, measured dosing, what to avoid, and calculator help when mixing.",
+      meta: "6 min read • Laundry bleach",
+      category: "bleach dilution laundry safety",
+    },
+    {
+      title: "How to Dilute Bleach for Mold Cleanup (Safety-First Basics)",
+      url: "blogs/how-to-dilute-bleach-for-mold-cleanup-safety-first-basics.html",
+      tag: "Bleach",
+      description:
+        "Safety-first basics for bleach dilution during mold cleanup: label-first mixing, ventilation reminders, and the mistakes that cause problems.",
+      meta: "6 min read • Bleach safety",
+      category: "bleach dilution mold safety",
+    },
+    {
+      title: "Essential Oil Room Spray Ratio (100 mL, 500 mL, 1 L)",
+      url: "blogs/essential-oil-room-spray-ratio.html",
+      tag: "Essential Oils",
+      description:
+        "Room spray ratios by bottle size with a conservative approach. Simple steps, how to stay consistent, and calculator support for drop estimates.",
+      meta: "6 min read • Room spray",
+      category: "essential-oils room-spray ratio",
+    },
+    {
+      title: "Essential Oil Roller Bottle Ratio (10 mL & 30 mL)",
+      url: "blogs/essential-oil-roller-bottle-ratio-10ml-30ml.html",
+      tag: "Essential Oils",
+      description:
+        "Practical roller bottle ratios for 10 mL and 30 mL with a conservative approach, simple mixing steps, and calculator support for drop estimates.",
+      meta: "6 min read • Roller bottle",
+      category: "essential-oils roller-bottle ratio",
     },
   ];
 
