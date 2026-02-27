@@ -22,6 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "bleach dilution safety",
     },
     {
+      title: "How to Dilute Bleach for Toilet Cleaning (Bowl + Seat)",
+      url: "blogs/how-to-dilute-bleach-for-toilet-cleaning.html",
+      tag: "Bleach",
+      description:
+        "A label-first, practical way to use bleach for toilet cleaning: dilution approach, safe application steps, what to avoid, and when not to use bleach.",
+      meta: "10 min read • Bleach dilution",
+      category: "bleach dilution toilet cleaning",
+    },
+    {
       title: "Can You Mix Bleach and Vinegar?",
       url: "blogs/can-you-mix-bleach-and-vinegar.html",
       tag: "Safety",
@@ -29,6 +38,45 @@ document.addEventListener("DOMContentLoaded", () => {
         "No—don’t mix bleach and vinegar. Short safety reason, common mistakes, and what to do instead.",
       meta: "4 min read • Safety",
       category: "safety bleach mixing",
+    },
+    {
+      title:
+        "Can You Mix Bleach and Dish Soap? What Happens, What to Do Instead",
+      url: "blogs/can-you-mix-bleach-and-dish-soap.html",
+      tag: "Safety",
+      description:
+        "Don’t mix bleach and dish soap. Why it’s risky, what to do if it happened, and a safer step-by-step cleaning workflow.",
+      meta: "12 min read • Safety",
+      category: "safety bleach dish-soap mixing",
+    },
+    {
+      title:
+        "Can You Mix Bleach and Ammonia? What Happens, What to Do, Safer Alternatives",
+      url: "blogs/can-you-mix-bleach-and-ammonia.html",
+      tag: "Safety",
+      description:
+        "Never mix bleach and ammonia. What can happen, what to do if it was accidental, and safer ways to clean without mixing products.",
+      meta: "11 min read • Safety",
+      category: "safety bleach ammonia mixing",
+    },
+    {
+      title: "Can You Mix Bleach and Baking Soda?",
+      url: "blogs/can-you-mix-bleach-and-baking-soda.html",
+      tag: "Safety",
+      description:
+        "Avoid mixing bleach and baking soda in the same container. What can go wrong, why it’s not “stronger,” and safer, label-first options.",
+      meta: "8 min read • Bleach safety",
+      category: "bleach mixing safety",
+    },
+    {
+      title:
+        "How Many Drops of Essential Oil in a Diffuser? (Low, Normal, Strong)",
+      url: "blogs/how-many-drops-essential-oil-in-diffuser.html",
+      tag: "Essential Oils",
+      description:
+        "A conservative drops guide by diffuser size (100–500 mL), plus how to scale ratios without overdoing it.",
+      meta: "9 min read • Diffuser ratios",
+      category: "essential oil diffuser",
     },
     {
       title: "Bleach Dilution Mistakes to Avoid",
@@ -40,6 +88,16 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "bleach dilution mistakes safety",
     },
     {
+      title:
+        "How Long Does Diluted Bleach Last? Storage, Potency, and When to Remix",
+      url: "blogs/how-long-does-diluted-bleach-last.html",
+      tag: "Bleach",
+      description:
+        "Diluted bleach loses strength over time. A practical, label-first way to store it, label it, and decide when to remix instead of guessing.",
+      meta: "12 min read • Bleach basics",
+      category: "bleach diluted shelf life storage",
+    },
+    {
       title: "What Does 1:10 Dilution Mean?",
       url: "blogs/what-does-1-to-10-dilution-mean.html",
       tag: "Dilution",
@@ -47,6 +105,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "A simple explanation of 1:10 dilution with real examples for 500 mL bottles, 1 liter mixes, and buckets.",
       meta: "5 min read • Dilution basics",
       category: "dilution ratio basics",
+    },
+    {
+      title: "What Does a 1:50 Dilution Mean? (Simple Math + Bottle Examples)",
+      url: "blogs/what-does-1-to-50-dilution-mean.html",
+      tag: "Dilution",
+      description:
+        "1:50 explained in plain language (parts vs total), plus quick real examples for liters, gallons, and common spray bottles—calculator-backed so you don’t mis-mix.",
+      meta: "11 min read • Dilution basics",
+      category: "dilution ratio basics 1-50",
     },
     {
       title: "How to Calculate Dilution Ratio (Concentrate to Final Volume)",
@@ -130,6 +197,16 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "dilution ratio basics 1-128",
     },
     {
+      title:
+        "What Does 1:256 Dilution Mean? (Exact Amounts for Common Bottles)",
+      url: "blogs/what-does-1-to-256-dilution-mean.html",
+      tag: "Dilution",
+      description:
+        "What 1:256 means in plain language, plus exact concentrate amounts for common bottles and buckets. Measure correctly and follow the product label.",
+      meta: "9 min read • Ratio basics",
+      category: "dilution ratio basics 1-256",
+    },
+    {
       title: "How Much Concentrate for 1 Gallon of Water?",
       url: "blogs/how-much-concentrate-for-1-gallon-of-water.html",
       tag: "Dilution",
@@ -157,6 +234,16 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "dilution bucket 5-gallon",
     },
     {
+      title:
+        "How Much Bleach for a 5-Gallon Bucket? (Label-First Method + Exact Amounts)",
+      url: "blogs/how-much-bleach-for-5-gallon-bucket.html",
+      tag: "Bleach",
+      description:
+        "There’s no universal amount—use your bleach label ratio and your real bucket fill level. Calculator-backed steps for consistent mixing.",
+      meta: "13 min read • Bleach dilution",
+      category: "bleach dilution bucket 5-gallon",
+    },
+    {
       title: "Bleach Dilution for Laundry: A Practical, Label-First Guide",
       url: "blogs/bleach-dilution-for-laundry-a-practical-label-first-guide.html",
       tag: "Bleach",
@@ -182,6 +269,16 @@ document.addEventListener("DOMContentLoaded", () => {
         "Room spray ratios by bottle size with a conservative approach. Simple steps, how to stay consistent, and calculator support for drop estimates.",
       meta: "6 min read • Room spray",
       category: "essential-oils room-spray ratio",
+    },
+    {
+      title:
+        "Essential Oil Dilution for Body Lotion (Conservative Ratios + Exact Drops)",
+      url: "blogs/essential-oil-dilution-for-body-lotion.html",
+      tag: "Essential Oils",
+      description:
+        "A conservative way to scent body lotion with essential oils: simple starting ratios, exact drops by size using the calculator, and patch-test reminders.",
+      meta: "10 min read • Leave-on lotion",
+      category: "essential-oils lotion dilution",
     },
     {
       title: "Essential Oil Roller Bottle Ratio (10 mL & 30 mL)",
