@@ -193,10 +193,26 @@
   padding: 10px 16px;
   font: inherit;
   cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .blog-loadmore button:hover {
-  border-color: var(--color-text);
+  border-color: rgba(31, 79, 216, 0.22);
+  background: rgba(31, 79, 216, 0.04);
+  box-shadow: 0 8px 18px rgba(31, 79, 216, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Optional: future-proof if you ever disable it */
+.blog-loadmore button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
 /* ---------- Utility ---------- */
