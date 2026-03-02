@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      How to Scale “oz per gallon” Cleaning Labels to Any Bottle | CleaningRatio
+    </title>
+    <meta
+      name="description"
+      content="If your cleaner label says “oz per gallon,” here’s how to scale it to 16 oz, 32 oz, 500 mL, and 1 L bottles without guessing—plus a calculator-backed method."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="../assets/img/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/favicon-180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="../assets/img/favicon-512.png"
+    />
+
+    <!-- Main CSS pointer -->
+    <link rel="stylesheet" href="../assets/css/style-v1.css" />
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="../assets/css/blog-post.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="../index.html" aria-label="CleaningRatio home">
+            <span class="logo-word-cleaning">Cleaning</span
+            ><span class="logo-word-ratio">Ratio</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="../index.html#calculators">Calculators</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button
+          class="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" id="mobileNav" hidden>
+        <ul>
+          <li><a href="../index.html#calculators">Calculators</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="calculator-page article-page">
+      <article class="article-shell" aria-labelledby="article-title">
+        <nav class="article-breadcrumb" aria-label="Breadcrumb">
+          <a href="../blog.html">Blog</a>
+          <span aria-hidden="true">/</span>
+          <span>Dilution</span>
+        </nav>
+
+        <header class="article-header">
+          <h1 id="article-title">
+            How to Scale “oz per gallon” Cleaning Labels to Any Spray Bottle (16
+            oz, 32 oz, 1 L)
+          </h1>
+          <p class="article-dek">
+            “oz per gallon” is simple once you treat it as a fixed dose per 128
+            fl oz. The only goal is scaling cleanly to your bottle size—without
+            rounding mistakes.
+          </p>
+
+          <div class="article-meta">
+            <span>12–15 min read</span>
+            <span aria-hidden="true">•</span>
+            <span>Label scaling</span>
+          </div>
+        </header>
+
+        <section class="article-section" aria-labelledby="quick-answer">
+          <h2 id="quick-answer">Quick answer</h2>
+          <p>
+            If a label says <strong>X oz per gallon</strong>, it means you use
+            <strong>X ounces of concentrate</strong> for
+            <strong>1 gallon (128 fl oz) of water</strong> unless the label
+            explicitly says “make 1 gallon total.” To scale it to any bottle:
+            <strong>concentrate (oz) = bottle size (fl oz) × (X ÷ 128)</strong>.
+            Follow the product label instructions exactly, especially when
+            labels distinguish “per gallon of water” vs “makes one gallon
+            total.”
+          </p>
+          <p class="article-note">
+            If you want a fast, repeatable method (especially when your
+            container is metric), use the
+            <a href="../cleaning-dilution-calculator.html"
+              >Cleaning Dilution Calculator</a
+            >
+            and save your recipe for next time.
+          </p>
+        </section>
+
+        <section class="article-section" aria-labelledby="what-it-means">
+          <h2 id="what-it-means">
+            What “oz per gallon” really means (and the label trap)
+          </h2>
+          <p>
+            Most concentrates are written as a dosing rule: “<strong
+              >2 oz per gallon</strong
+            >” or “<strong>4 oz per gallon</strong>.” That is usually shorthand
+            for “per gallon of water,” not “make one gallon total.” Some
+            products do mean “make 1 gallon total solution,” and the math
+            changes slightly.
+          </p>
+          <ul class="article-list">
+            <li>
+              If the label says <strong>“X oz per gallon of water”</strong>, you
+              scale against <strong>128 fl oz of water</strong>.
+            </li>
+            <li>
+              If the label says <strong>“to make 1 gallon”</strong>, the “water
+              amount” is slightly less because concentrate is included in the
+              final gallon.
+            </li>
+            <li>
+              If your label gives both (common in commercial products), follow
+              the exact line for your use-case.
+            </li>
+          </ul>
+          <p class="article-note">
+            Keep this open if labels confuse you:
+            <a href="../blogs/how-to-read-cleaning-dilution-labels.html"
+              >How to Read Cleaning Dilution Instructions on Labels</a
+            >.
+          </p>
+        </section>
+
+        <section class="article-section" aria-labelledby="formula">
+          <h2 id="formula">The scaling formula (one line, no guessing)</h2>
+          <p>
+            Let’s say your label says <strong>X oz per gallon</strong>. A gallon
+            is <strong>128 fl oz</strong>. Your bottle is
+            <strong>B fl oz</strong>.
+          </p>
+          <ul class="article-list">
+            <li><strong>Concentrate (oz) = B × (X ÷ 128)</strong></li>
+            <li>
+              <strong>Concentrate (mL) = Concentrate (oz) × 29.57</strong>
+              (useful if you measure in mL)
+            </li>
+          </ul>
+          <p class="article-note">
+            If you’d rather not convert units manually, use the
+            <a href="../cleaning-dilution-calculator.html"
+              >Cleaning Dilution Calculator</a
+            >
+            (especially for 500 mL / 750 mL / 1 L bottles).
+          </p>
+        </section>
+
+        <section class="article-section" aria-labelledby="table">
+          <h2 id="table">
+            Quick table: common bottles (for a label that says 1 oz per gallon)
+          </h2>
+          <p>
+            This table is for <strong>1 oz per gallon</strong> as a clean
+            baseline. If your label is <strong>2 oz per gallon</strong>, double
+            the concentrate amounts. If it’s <strong>4 oz per gallon</strong>,
+            multiply by four.
+          </p>
+
+          <div
+            class="table-wrap"
+            role="region"
+            aria-label="oz per gallon scaling examples table"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>Container size</th>
+                  <th>Concentrate for 1 oz/gal</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>16 fl oz spray bottle</td>
+                  <td>0.125 oz (≈ 3.7 mL)</td>
+                  <td>Easy to over-pour. Measure if you can.</td>
+                </tr>
+                <tr>
+                  <td>24 fl oz bottle</td>
+                  <td>0.188 oz (≈ 5.6 mL)</td>
+                  <td>Good “mid-size” for daily cleaners.</td>
+                </tr>
+                <tr>
+                  <td>32 fl oz spray bottle</td>
+                  <td>0.25 oz (≈ 7.4 mL)</td>
+                  <td>Very common label conversion target.</td>
+                </tr>
+                <tr>
+                  <td>500 mL bottle</td>
+                  <td>≈ 4.0 mL</td>
+                  <td>Metric container; calculator is faster.</td>
+                </tr>
+                <tr>
+                  <td>1 liter bottle</td>
+                  <td>≈ 8.0 mL</td>
+                  <td>Also scales cleanly for repeated mixes.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="article-note">
+            For the 32 oz scenario specifically, this pairs well with:
+            <a href="../blogs/how-to-dilute-cleaner-for-32-oz-spray-bottle.html"
+              >How to Dilute Cleaner for a 32 oz Spray Bottle</a
+            >.
+          </p>
+        </section>
+
+        <section class="article-section" aria-labelledby="step-by-step">
+          <h2 id="step-by-step">Step-by-step (the repeatable way)</h2>
+          <ol class="article-list">
+            <li>
+              Read the label line carefully and confirm whether it means
+              <strong>per gallon of water</strong> or
+              <strong>makes one gallon total</strong>.
+            </li>
+            <li>Pick your container size (16 oz, 32 oz, 500 mL, 1 L).</li>
+            <li>
+              Use the formula (or the
+              <a href="../cleaning-dilution-calculator.html"
+                >Cleaning Dilution Calculator</a
+              >) to get the concentrate amount.
+            </li>
+            <li>
+              Measure concentrate with a consistent tool (measuring spoon,
+              syringe-style measure, or marked cup). “A random cap” is not
+              consistent.
+            </li>
+            <li>
+              Add water using the label’s method (some are water-first; some are
+              “fill to line”).
+            </li>
+            <li>
+              Write the recipe on tape and stick it to the bottle. Consistency
+              beats “stronger.”
+            </li>
+          </ol>
+        </section>
+
+        <section class="article-section" aria-labelledby="mistakes">
+          <h2 id="mistakes">Common mistakes that make mixes too strong</h2>
+          <ul class="article-list">
+            <li>
+              Treating “oz per gallon” like a ratio (it’s dosing, and rounding
+              errors add up fast in small bottles).
+            </li>
+            <li>
+              Forgetting a gallon is <strong>128 fl oz</strong> (not 100, not
+              “about 120”).
+            </li>
+            <li>
+              Guessing with caps or “free-pouring,” then wondering why
+              residue/streaks happen.
+            </li>
+            <li>
+              Mixing stronger “because it’s dirty.” Over-strong mixes can leave
+              film and may damage surfaces.
+            </li>
+          </ul>
+          <p class="article-note">
+            For the 1-gallon baseline method (worth bookmarking):
+            <a href="../blogs/how-much-concentrate-for-1-gallon-of-water.html"
+              >How Much Concentrate for 1 Gallon of Water?</a
+            >
+          </p>
+        </section>
+
+        <section class="article-section" aria-labelledby="related">
+          <h2 id="related">Related tools and guides</h2>
+          <ul class="article-list">
+            <li>
+              <a href="../cleaning-dilution-calculator.html"
+                >Cleaning Dilution Calculator</a
+              >
+            </li>
+            <li>
+              <a href="../blogs/how-to-read-cleaning-dilution-labels.html"
+                >How to Read Cleaning Dilution Instructions on Labels</a
+              >
+            </li>
+            <li>
+              <a href="../blogs/how-much-concentrate-for-1-gallon-of-water.html"
+                >How Much Concentrate for 1 Gallon of Water?</a
+              >
+            </li>
+            <li>
+              <a
+                href="../blogs/how-to-dilute-cleaner-for-32-oz-spray-bottle.html"
+                >How to Dilute Cleaner for a 32 oz Spray Bottle</a
+              >
+            </li>
+            <li><a href="../blog.html">Browse all CleaningRatio guides</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="../index.html"
+              class="footer-logo"
+              aria-label="CleaningRatio home"
+            >
+              <span class="footer-logo-cleaning">Cleaning</span
+              ><span class="footer-logo-ratio">Ratio</span>
+            </a>
+            <p class="footer-subtitle">
+              Cleaning dilution calculators and mixing guides for household and
+              commercial use.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="../index.html#calculators">Calculators</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="../privacy.html">Privacy Policy</a></li>
+              <li><a href="../terms.html">Terms of Use</a></li>
+              <li><a href="../disclaimer.html">Disclaimer</a></li>
+              <li><a href="../cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> CleaningRatio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
