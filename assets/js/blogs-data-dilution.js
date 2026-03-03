@@ -5,6 +5,46 @@
 
 window.BLOG_DATA_DILUTION = [
   {
+    title:
+      "Baking Soda Cleaning Ratios: Paste vs Spray vs Soak (What Works, What to Avoid)",
+    url: "blogs/baking-soda-cleaning-ratios-paste-spray-soak.html",
+    tag: "Dilution",
+    description:
+      "Practical baking soda ratios for paste, spray, and soak methods—plus what to avoid (especially bleach mixing) and how to keep results consistent.",
+    meta: "12–16 min read • Baking soda ratios",
+    category: "baking soda cleaning ratios paste spray soak",
+  },
+  {
+    title:
+      "Oxygen Bleach (Sodium Percarbonate) Dilution: Laundry + Cleaning Ratios That Rinse Clean",
+    url: "blogs/oxygen-bleach-sodium-percarbonate-dilution.html",
+    tag: "Dilution",
+    description:
+      "Oxygen bleach dilution made practical: soak vs wash dosing, per-gallon examples, dissolving tips to avoid residue, and how not to confuse it with chlorine bleach.",
+    meta: "13–17 min read • Oxygen bleach dilution",
+    category: "oxygen bleach sodium percarbonate dilution",
+  },
+  {
+    title:
+      "Quat Disinfectant Dilution (Quaternary Ammonium): How to Mix It From Any Label (mL/L, oz/gal, pumps)",
+    url: "blogs/quat-disinfectant-dilution-how-to-mix-from-label.html",
+    tag: "Dilution",
+    description:
+      "How to dilute quat disinfectant concentrates using any label format (mL per liter, oz per gallon, pumps). Includes exact spray bottle + bucket examples and calculator links.",
+    meta: "14–18 min read • Disinfectant dilution",
+    category: "quat disinfectant dilution label scaling",
+  },
+  {
+    title:
+      "Dish Soap Dilution for Cleaning: Spray Bottles, Floors, Degreasing (Exact Amounts)",
+    url: "blogs/dish-soap-dilution-for-cleaning.html",
+    tag: "Dilution",
+    description:
+      "A practical dish-soap dilution guide that avoids residue. Exact amounts for 500 mL, 1 L, 16 oz, and 32 oz bottles, plus troubleshooting and calculator links.",
+    meta: "12–16 min read • Everyday dilution",
+    category: "dish soap dilution ratio spray bottle",
+  },
+  {
     title: "How to Make 70% Isopropyl Alcohol (From 91% or 99%)",
     url: "blogs/how-to-make-70-percent-isopropyl-alcohol-from-91-99.html",
     tag: "Dilution",
@@ -253,5 +293,65 @@ window.BLOG_DATA_DILUTION = [
       "1:100 means 1 part concentrate to 100 parts water. Exact amounts for 500 mL, 1 L, 16/32 oz bottles and common buckets—plus a label-first calculator method.",
     meta: "10–14 min read • Ratio basics",
     category: "dilution 1:100 ratio meaning",
+  },
+  {
+    title:
+      "Borax Cleaning Dilution Guide (Laundry, Floors, All-Purpose): Mild Ratios + When Not to Use",
+    url: "blogs/borax-cleaning-dilution-guide.html",
+    tag: "Dilution",
+    description:
+      "A label-first, conservative guide to borax cleaning mixes—where it helps (laundry, floors, deodorizing), mild starting ratios, and where to avoid it to reduce residue and irritation.",
+    meta: "12–16 min read • Borax dilution",
+    category: "borax dilution ratios",
+  },
+  {
+    title:
+      "Citric Acid Solution for Cleaning (5% vs 10%): Descaling Ratios for Kettles, Coffee Makers, Bathrooms",
+    url: "blogs/citric-acid-solution-for-cleaning-5-vs-10-percent.html",
+    tag: "Dilution",
+    description:
+      "Exact 5% and 10% citric acid mixing tables for common bottle sizes, plus where to use it (descaling) and where to avoid it (stone, sensitive materials).",
+    meta: "12–18 min read • Citric acid ratios",
+    category: "citric acid solution ratio",
+  },
+  {
+    title:
+      "Fabuloso Dilution Ratio for Mopping + Spray Bottles (1 Liter, 500 mL, 1 Gallon)",
+    url: "blogs/fabuloso-dilution-ratio-mop-spray-bottle.html",
+    tag: "Dilution",
+    description:
+      "A practical, residue-aware way to dilute Fabuloso for mopping and spray bottles—exact amounts for common containers, plus capful scaling.",
+    meta: "15–21 min read • Fabuloso ratios",
+    category: "fabuloso dilution ratio mop spray bottle capful",
+  },
+  {
+    title:
+      "Pine-Sol Dilution Ratio for Mopping + Spray Bottles (1 Gallon, 5L, 1L)",
+    url: "blogs/pine-sol-dilution-ratio-mop-spray-bottle.html",
+    tag: "Dilution",
+    description:
+      "Label-first Pine-Sol dilution with exact conversions for common label formats (per gallon / per liter), plus scaling to 5L mop buckets and 500 mL–1L spray bottles without residue.",
+    meta: "18–26 min read • Pine-Sol ratios",
+    category: "pine sol dilution ratio mop bucket spray bottle",
+  },
+  {
+    title:
+      "OdoBan Dilution Ratio Guide (Spray Bottles, Buckets, Laundry): Label-First + Exact Conversions",
+    url: "blogs/odoban-dilution-ratio-guide-label-first.html",
+    tag: "Dilution",
+    description:
+      "OdoBan dilution made practical: read your label (ratio vs oz/gal), convert it to exact amounts for 32 oz, 500 mL, 1 L, and buckets—plus conservative safety reminders and calculator help.",
+    meta: "14–18 min read • Brand dilution math",
+    category: "odoban dilution ratio spray bottle bucket",
+  },
+  {
+    title:
+      "Simple Green Dilution Ratio Chart (All-Purpose, Floors, Degreasing): Use Your Label + Bottle Math",
+    url: "blogs/simple-green-dilution-ratio-chart-label-first.html",
+    tag: "Dilution",
+    description:
+      "Simple Green dilution without guesswork: label-first approach plus exact conversions for spray bottles, liters, and mop buckets—using your real container size.",
+    meta: "14–18 min read • Brand dilution math",
+    category: "simple green dilution ratio spray bottle floors",
   },
 ];

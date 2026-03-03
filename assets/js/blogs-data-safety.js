@@ -79,4 +79,24 @@ window.BLOG_DATA_SAFETY = [
     meta: "9–12 min read • Safety",
     category: "safety bleach rubbing alcohol mixing",
   },
+  {
+    title:
+      "Dettol Dilution Ratio (1:40, 1:20, 1:10): How to Mix for Mopping + Spray Bottles (Label-First)",
+    url: "blogs/dettol-dilution-ratio-1-40-1-20-1-10.html",
+    tag: "Safety",
+    description:
+      "Dettol dilution ratios explained with exact amounts for 500 mL, 1 L, and 1 gallon—plus label-first reminders and what not to mix.",
+    meta: "16–22 min read • Dettol ratios",
+    category: "dettol dilution ratio disinfectant label first",
+  },
+  {
+    title:
+      "Can You Mix Vinegar and Baking Soda? What Works, What Doesn’t, and the Safer Way",
+    url: "blogs/can-you-mix-vinegar-and-baking-soda.html",
+    tag: "Safety",
+    description:
+      "Yes, but the fizz mostly neutralizes both. What it’s actually good for, where it fails, and the safer sequence method (plus rinse and dilution tips).",
+    meta: "16–24 min read • Safety",
+    category: "safety vinegar baking soda mixing",
+  },
 ];
