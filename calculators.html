@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Essential Oil Ratio Calculator | CleaningRatio</title>
+    <title>Cleaning Dilution Calculators | CleaningRatio</title>
     <meta
       name="description"
-      content="Calculate essential oil drops for cleaning sprays and household mixes. Simple essential oil dilution calculator for bottle sizes."
+      content="All CleaningRatio dilution calculators in one place — bleach, essential oil, PPM, hydrogen peroxide, hypochlorous acid, and general cleaning."
     />
+
     <link
       rel="icon"
       type="image/png"
@@ -35,8 +36,7 @@
 
     <!-- Main CSS pointer -->
     <link rel="stylesheet" href="assets/css/style-v1.css" />
-    <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="assets/css/calculator-essential-oil.css" />
+    <link rel="stylesheet" href="assets/css/hub-pages.css" />
   </head>
 
   <body>
@@ -49,6 +49,7 @@
             ><span class="logo-word-ratio">Ratio</span>
           </a>
         </div>
+
         <!-- Desktop Navigation -->
         <nav class="nav-desktop">
           <ul>
@@ -86,104 +87,84 @@
 
     <!-- ================= MAIN ================= -->
     <main class="calculator-page">
-      <!-- Hero -->
+      <nav class="hub-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span>Calculators</span>
+      </nav>
+
       <section class="calculator-hero">
-        <h1>Essential Oil Ratio Calculator</h1>
-        <p class="subtitle">
-          Calculate the correct number of essential oil drops for sprays and
-          household mixes.
+        <h1>Cleaning Dilution Calculators</h1>
+        <p class="hero-subtitle hero-subtitle-simple">
+          All CleaningRatio calculators in one place. Pick a tool and get the
+          exact mix in seconds.
         </p>
-        <p class="note">
-          Use essential oils carefully. Keep away from children and pets. Do not
-          ingest.
+        <p class="hero-footnote hero-footnote-simple">
+          Always follow product labels. Never mix bleach with vinegar or
+          ammonia.
         </p>
       </section>
 
-      <!-- Calculator Card -->
-      <section class="calculator-card">
-        <form id="essential-oil-form">
-          <!-- Bottle Size -->
-          <div class="form-group">
-            <label for="bottle-size">Bottle size</label>
-            <div class="input-inline">
-              <input
-                type="number"
-                id="bottle-size"
-                min="0"
-                step="1"
-                placeholder="e.g. 500"
-                required
-              />
-              <select id="bottle-unit">
-                <option value="ml">ml</option>
-                <option value="l">liters</option>
-              </select>
-            </div>
-          </div>
+      <section aria-label="Calculator tools">
+        <div class="tools-grid tools-grid-hero">
+          <!-- Tool 1 -->
+          <article class="tool-card">
+            <a href="cleaning-dilution-calculator.html" class="tool-card-link">
+              <h3>Cleaning Dilution</h3>
+              <p>Cleaner + water for everyday household cleaning.</p>
+              <span class="tool-link">Open calculator</span>
+            </a>
+          </article>
 
-          <!-- Use Case -->
-          <div class="form-group">
-            <label for="use-case">Use case</label>
-            <select id="use-case" required>
-              <option value="">Select use case</option>
-              <option value="cleaning-spray">Cleaning spray</option>
-              <option value="air-freshener">Air freshener</option>
-              <option value="laundry">Laundry</option>
-            </select>
-          </div>
+          <!-- Tool 2 -->
+          <article class="tool-card">
+            <a href="bleach-dilution-calculator.html" class="tool-card-link">
+              <h3>Bleach Dilution</h3>
+              <p>Safe bleach-to-water ratios for disinfection.</p>
+              <span class="tool-link">Open calculator</span>
+            </a>
+          </article>
 
-          <!-- Sensitivity -->
-          <div class="form-group">
-            <label for="sensitivity">Household sensitivity</label>
-            <select id="sensitivity" required>
-              <option value="">Select sensitivity</option>
-              <option value="normal">Normal</option>
-              <option value="sensitive">
-                Sensitive (kids/pets/strong smell)
-              </option>
-            </select>
-          </div>
+          <!-- Tool 3 -->
+          <article class="tool-card">
+            <a
+              href="essential-oil-ratio-calculator.html"
+              class="tool-card-link"
+            >
+              <h3>Essential Oil Ratio</h3>
+              <p>Correct drops for sprays and household mixes.</p>
+              <span class="tool-link">Open calculator</span>
+            </a>
+          </article>
 
-          <!-- Strength -->
-          <div class="form-group">
-            <label for="strength">Strength</label>
-            <select id="strength" required>
-              <option value="">Select strength</option>
-              <option value="light">Light</option>
-              <option value="normal">Normal</option>
-              <option value="strong">Strong</option>
-            </select>
-          </div>
+          <!-- Tool 4 -->
+          <article class="tool-card">
+            <a href="ppm-dilution-calculator.html" class="tool-card-link">
+              <h3>PPM Dilution</h3>
+              <p>Dilute stock solutions to a target PPM concentration.</p>
+              <span class="tool-link">Open calculator</span>
+            </a>
+          </article>
 
-          <!-- Actions -->
-          <div class="form-actions">
-            <button type="button" id="calculate-oil-btn">Calculate</button>
-            <button type="reset" class="secondary">Clear</button>
-          </div>
-        </form>
-      </section>
+          <!-- Tool 5 -->
+          <article class="tool-card">
+            <a href="hydrogen-peroxide-calculator.html" class="tool-card-link">
+              <h3>Hydrogen Peroxide</h3>
+              <p>Dilute stock H₂O₂ to a target percentage safely.</p>
+              <span class="tool-link">Open calculator</span>
+            </a>
+          </article>
 
-      <!-- Results -->
-      <section class="result-card" id="oil-result-card" hidden>
-        <h2>Your essential oil amount</h2>
-
-        <ul class="results-list">
-          <li>
-            <strong>Recommended drops:</strong>
-            <span id="result-drops">—</span>
-          </li>
-          <li>
-            <strong>Drop ratio:</strong>
-            <span id="result-drop-ratio">—</span>
-          </li>
-        </ul>
-
-        <div class="safety-box">
-          <strong>Safety reminder</strong>
-          <p>
-            Avoid direct skin contact. Store oils securely. Use lower amounts
-            for sensitive households.
-          </p>
+          <!-- Tool 6 -->
+          <article class="tool-card">
+            <a href="hypochlorous-acid-calculator.html" class="tool-card-link">
+              <h3>Hypochlorous Acid</h3>
+              <p>
+                Dilute HOCl to a target ppm for disinfection and sanitizing.
+              </p>
+              <span class="tool-link">Open calculator</span>
+            </a>
+          </article>
         </div>
       </section>
     </main>
@@ -243,6 +224,5 @@
 
     <!-- ================= JS ================= -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/essential-oil.js"></script>
   </body>
 </html>

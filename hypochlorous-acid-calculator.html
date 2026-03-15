@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hypochlorous Acid (HOCl) Dilution Calculator | CleaningRatio</title>
+    <meta
+      name="description"
+      content="Calculate how to dilute hypochlorous acid to a target ppm for cleaning, disinfection, wound care, and food contact sanitizing."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/img/favicon-64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon-180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/img/favicon-512.png"
+    />
+
+    <!-- Main CSS pointer -->
+    <link rel="stylesheet" href="assets/css/style-v1.css" />
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="assets/css/calculator-hocl.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html" aria-label="CleaningRatio home">
+            <span class="logo-word-cleaning">Cleaning</span
+            ><span class="logo-word-ratio">Ratio</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="calculators.html">Calculators</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button
+          class="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" id="mobileNav" hidden>
+        <ul>
+          <li><a href="calculators.html">Calculators</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main class="calculator-page">
+      <!-- Hero -->
+      <section class="calculator-hero">
+        <h1>Hypochlorous Acid (HOCl) Dilution Calculator</h1>
+        <p class="subtitle">
+          Calculate how much HOCl stock solution to add to reach a target ppm
+          for cleaning, disinfection, or sanitizing.
+        </p>
+        <p class="note">
+          HOCl degrades with light and heat — verify ppm with test strips for
+          critical applications.
+        </p>
+      </section>
+
+      <!-- Calculator Card -->
+      <section class="calculator-card">
+        <form id="hocl-dilution-form">
+          <!-- Stock Strength -->
+          <div class="form-group">
+            <label for="stock-strength">Stock HOCl strength</label>
+            <div class="input-inline">
+              <input
+                type="number"
+                id="stock-strength"
+                min="0.01"
+                step="any"
+                placeholder="e.g. 500"
+                required
+              />
+              <select id="stock-unit">
+                <option value="ppm">ppm</option>
+                <option value="percent">%</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Target PPM -->
+          <div class="form-group">
+            <label for="target-ppm-preset">Target ppm</label>
+            <select id="target-ppm-preset">
+              <option value="50">50 ppm — general cleaning</option>
+              <option value="100">100 ppm — surface disinfection</option>
+              <option value="200">200 ppm — food contact sanitizing</option>
+              <option value="500">500 ppm — heavy disinfection</option>
+              <option value="custom">Custom</option>
+            </select>
+            <input
+              type="number"
+              id="target-ppm-custom"
+              min="1"
+              step="1"
+              placeholder="Enter target ppm"
+              hidden
+            />
+          </div>
+
+          <!-- Final Volume -->
+          <div class="form-group">
+            <label for="final-volume">Final solution volume</label>
+            <div class="input-inline">
+              <input
+                type="number"
+                id="final-volume"
+                min="0.1"
+                step="any"
+                placeholder="e.g. 1000"
+                required
+              />
+              <select id="volume-unit">
+                <option value="ml">ml</option>
+                <option value="l">liters</option>
+                <option value="gal">gallons</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button type="button" id="calculate-hocl-btn">Calculate</button>
+            <button type="reset" class="secondary">Clear</button>
+          </div>
+
+          <p class="form-feedback" id="form-feedback" hidden></p>
+        </form>
+      </section>
+
+      <!-- Results -->
+      <section class="result-card" id="hocl-result-card" hidden>
+        <h2>Your diluted HOCl solution</h2>
+
+        <ul class="results-list">
+          <li>
+            <strong>HOCl stock solution:</strong>
+            <span id="result-stock">—</span>
+          </li>
+          <li>
+            <strong>Water:</strong>
+            <span id="result-water">—</span>
+          </li>
+          <li>
+            <strong>Dilution ratio:</strong>
+            <span id="result-ratio">—</span>
+          </li>
+        </ul>
+
+        <div class="safety-box">
+          <strong>Important</strong>
+          <p>
+            Hypochlorous acid loses strength over time, especially when exposed
+            to light or heat. Store in an opaque container and verify
+            concentration with test strips before use in food contact or
+            healthcare settings.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="index.html"
+              class="footer-logo"
+              aria-label="CleaningRatio home"
+            >
+              <span class="footer-logo-cleaning">Cleaning</span
+              ><span class="footer-logo-ratio">Ratio</span>
+            </a>
+            <p class="footer-subtitle">
+              Cleaning dilution calculators and mixing guides for household and
+              commercial use.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="calculators.html">Calculators</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="year"></span> CleaningRatio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/hocl.js"></script>
+  </body>
+</html>
