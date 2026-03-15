@@ -139,6 +139,90 @@ window.BLOG_DATA_DILUTION = [
     category: "dilution vinegar ratios cleaning",
   },
   {
+    title: "How Much Vinegar in a Spray Bottle? 16 oz, 24 oz, and 32 oz Mixes",
+    url: "blogs/how-much-vinegar-in-spray-bottle.html",
+    tag: "Dilution",
+    description:
+      "Exact vinegar amounts for 16 oz, 24 oz, and 32 oz spray bottles, including 1:1, 1:2, and 1:3 cleaning mixes plus practical tips on where each ratio makes sense.",
+    meta: "12–16 min read • Vinegar spray bottle",
+    category: "dilution vinegar spray bottle ratios",
+  },
+  {
+    title: "Vinegar Cleaning Ratio for Windows and Glass | CleaningRatio",
+    url: "blogs/vinegar-cleaning-ratio-for-windows-and-glass.html",
+    tag: "Dilution",
+    description:
+      "A practical vinegar guide for windows and glass with 1:1 and lighter mix examples, streak-reduction tips, bottle sizing, and where vinegar should not be used.",
+    meta: "12–16 min read • Vinegar glass cleaning",
+    category: "dilution vinegar windows glass cleaning ratio",
+  },
+  {
+    title:
+      "Cleaning Vinegar vs White Vinegar for Cleaning: What Ratio Should You Use? | CleaningRatio",
+    url: "blogs/cleaning-vinegar-vs-white-vinegar-for-cleaning.html",
+    tag: "Dilution",
+    description:
+      "Understand the real difference between cleaning vinegar and white vinegar for household cleaning, including strength, safer starting ratios, and common mistakes.",
+    meta: "12–16 min read • Vinegar comparison",
+    category: "dilution cleaning vinegar white vinegar comparison",
+  },
+  {
+    title:
+      "Vinegar Cleaning Ratio for Floors: Tile, Laminate, and Sealed Surfaces",
+    url: "blogs/vinegar-cleaning-ratio-for-floors.html",
+    tag: "Dilution",
+    description:
+      "A practical guide to vinegar floor-cleaning ratios, including mop bucket examples, when to use a lighter mix, and where vinegar should be avoided.",
+    meta: "12–16 min read • Vinegar floor cleaning",
+    category: "dilution vinegar floor cleaning mop ratio",
+  },
+  {
+    title: "Can You Mix Vinegar and Dish Soap for Cleaning?",
+    url: "blogs/can-you-mix-vinegar-and-dish-soap.html",
+    tag: "Dilution",
+    description:
+      "Learn when vinegar and dish soap can make sense for household cleaning, where the mix is commonly used, and when it may leave residue or be unnecessary.",
+    meta: "12–16 min read • Vinegar + dish soap",
+    category: "dilution vinegar dish soap cleaning mix",
+  },
+  {
+    title: "Does Vinegar Disinfect? What It Can and Cannot Do",
+    url: "blogs/does-vinegar-disinfect-for-cleaning.html",
+    tag: "Dilution",
+    description:
+      "Understand whether vinegar disinfects, what it can realistically do as a cleaner, and why cleaning and disinfecting are not the same thing.",
+    meta: "12–16 min read • Vinegar disinfecting myth",
+    category: "dilution vinegar disinfect cleaner myth",
+  },
+  {
+    title: "Vinegar Ratio for Cleaning a Shower Head | CleaningRatio",
+    url: "blogs/vinegar-ratio-for-cleaning-shower-head.html",
+    tag: "Dilution",
+    description:
+      "Find a practical vinegar ratio for cleaning a shower head, including soaking options, when to use 1:1 vinegar and water, and when stronger vinegar may be unnecessary.",
+    meta: "12–16 min read • Vinegar descaling",
+    category: "dilution vinegar shower head cleaning ratio descaling",
+  },
+  {
+    title:
+      "How to Clean a Coffee Maker With Vinegar: Ratio Guide | CleaningRatio",
+    url: "blogs/how-to-clean-coffee-maker-with-vinegar-ratio.html",
+    tag: "Dilution",
+    description:
+      "A practical coffee maker vinegar ratio guide with 1:1 examples, step-by-step descaling logic, and tips for rinsing and avoiding leftover vinegar taste.",
+    meta: "12–16 min read • Vinegar coffee maker",
+    category: "dilution vinegar coffee maker cleaning ratio descaling",
+  },
+  {
+    title: "What Not to Clean With Vinegar: Surfaces to Avoid | CleaningRatio",
+    url: "blogs/what-not-to-clean-with-vinegar.html",
+    tag: "Dilution",
+    description:
+      "Learn what not to clean with vinegar, including stone, hardwood, electronics, and other surfaces where acidic cleaning may dull or damage finishes.",
+    meta: "12–16 min read • Vinegar safety",
+    category: "dilution vinegar surfaces avoid safety cleaning",
+  },
+  {
     title: "How Much Cleaner Concentrate for a 500 mL Spray Bottle?",
     url: "blogs/how-much-concentrate-for-500ml-spray-bottle.html",
     tag: "Dilution",
@@ -353,5 +437,23 @@ window.BLOG_DATA_DILUTION = [
       "Simple Green dilution without guesswork: label-first approach plus exact conversions for spray bottles, liters, and mop buckets—using your real container size.",
     meta: "14–18 min read • Brand dilution math",
     category: "simple green dilution ratio spray bottle floors",
+  },
+  {
+    title: "Cleaning vs Disinfecting — What's the Difference?",
+    url: "blogs/cleaning-vs-disinfecting-difference.html",
+    tag: "Dilution",
+    description:
+      "Cleaning removes dirt. Disinfecting kills germs. Most everyday jobs only need cleaning. Here's when each one matters and which calculator to use.",
+    meta: "6 min read • Concept guide",
+    category: "cleaning disinfecting difference sanitizing",
+  },
+  {
+    title: "Ratio vs Percentage vs PPM — What's the Difference?",
+    url: "blogs/ratio-vs-percentage-vs-ppm.html",
+    tag: "Dilution",
+    description:
+      "Three ways to express concentration. How ratios, percentages, and ppm relate, a quick conversion table, and which calculator to use for each.",
+    meta: "7 min read • Concept guide",
+    category: "ratio percentage ppm conversion dilution math",
   },
 ];

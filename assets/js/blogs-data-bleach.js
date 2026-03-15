@@ -116,4 +116,13 @@ window.BLOG_DATA_BLEACH = [
     meta: "12–16 min read • Bleach disinfecting",
     category: "bleach dilution disinfecting surfaces",
   },
+  {
+    title: "Bleach vs Vinegar for Cleaning: When to Use Which",
+    url: "blogs/bleach-vs-vinegar-for-cleaning.html",
+    tag: "Bleach",
+    description:
+      "Bleach disinfects. Vinegar dissolves buildup. A practical side-by-side comparison — when to use each, what each one does, and the one rule you must follow.",
+    meta: "6 min read • Comparison guide",
+    category: "bleach vinegar comparison cleaning disinfecting",
+  },
 ];
