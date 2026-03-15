@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core -->
+  <!-- Homepage -->
   <url><loc>https://cleaningratio.com/</loc></url>
+
+  <!-- Calculators -->
+  <url><loc>https://cleaningratio.com/calculators.html</loc></url>
+  <url><loc>https://cleaningratio.com/cleaning-dilution-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/bleach-dilution-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/essential-oil-ratio-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/ppm-dilution-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/hydrogen-peroxide-calculator.html</loc></url>
+  <url><loc>https://cleaningratio.com/hypochlorous-acid-calculator.html</loc></url>
+
+  <!-- Hub / Guide pages -->
+  <url><loc>https://cleaningratio.com/bleach-dilution-guide.html</loc></url>
+  <url><loc>https://cleaningratio.com/vinegar-cleaning-ratios.html</loc></url>
+  <url><loc>https://cleaningratio.com/essential-oil-dilution-guide.html</loc></url>
+  <url><loc>https://cleaningratio.com/surface-cleaning-guide.html</loc></url>
+  <url><loc>https://cleaningratio.com/cleaning-dilution-guide.html</loc></url>
+
+  <!-- Core pages -->
   <url><loc>https://cleaningratio.com/blog.html</loc></url>
   <url><loc>https://cleaningratio.com/about.html</loc></url>
   <url><loc>https://cleaningratio.com/contact.html</loc></url>
   <url><loc>https://cleaningratio.com/faq.html</loc></url>
-
-  <!-- Calculators -->
-  <url><loc>https://cleaningratio.com/cleaning-dilution-calculator.html</loc></url>
-  <url><loc>https://cleaningratio.com/bleach-dilution-calculator.html</loc></url>
-  <url><loc>https://cleaningratio.com/essential-oil-ratio-calculator.html</loc></url>
 
   <!-- Legal -->
   <url><loc>https://cleaningratio.com/privacy.html</loc></url>
@@ -19,207 +32,85 @@
   <url><loc>https://cleaningratio.com/disclaimer.html</loc></url>
   <url><loc>https://cleaningratio.com/cookies.html</loc></url>
 
-  <!--  Blog posts  -->
-<url>
-<loc>https://cleaningratio.com/blogs/baking-soda-cleaning-ratios-paste-spray-soak.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/bleach-dilution-for-laundry-a-practical-label-first-guide.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/bleach-dilution-mistakes-to-avoid.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/bleach-ppm-chart-500-1000-5000.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/borax-cleaning-dilution-guide.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-ammonia.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-baking-soda.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-dish-soap.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-hydrogen-peroxide.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-rubbing-alcohol.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-toilet-bowl-cleaner.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-vinegar.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-vinegar-and-baking-soda.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/can-you-mix-vinegar-and-hydrogen-peroxide.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/capful-in-5-liters-how-to-scale.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/citric-acid-solution-for-cleaning-5-vs-10-percent.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/dettol-dilution-ratio-1-40-1-20-1-10.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/dilution-ratio-to-percentage-conversion.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/dish-soap-dilution-for-cleaning.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/essential-oil-bath-dilution-how-many-drops.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/essential-oil-dilution-chart-for-skin-body-kids.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/essential-oil-dilution-for-body-lotion.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/essential-oil-dilution-for-massage-oil.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/essential-oil-roller-bottle-ratio-10ml-30ml.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/essential-oil-room-spray-ratio.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/fabuloso-dilution-ratio-mop-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-long-does-diluted-bleach-last.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-many-drops-essential-oil-in-diffuser.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-many-drops-essential-oil-per-ounce.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-much-bleach-for-5-gallon-bucket.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-much-concentrate-for-1-gallon-of-water.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-much-concentrate-for-1-liter.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-much-concentrate-for-500ml-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-calculate-dilution-ratio.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-disinfecting-surfaces.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-floor-cleaning.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-mold-cleanup-safety-first-basics.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-toilet-cleaning.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-cleaner-for-16-oz-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-cleaner-for-32-oz-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-dilute-isopropyl-alcohol-91-to-70.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-make-0-05-percent-bleach-solution-500-ppm.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-make-0-1-percent-bleach-solution-1000-ppm.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-make-0-5-percent-bleach-solution-5000-ppm.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-make-1-to-100-dilution.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-make-70-percent-isopropyl-alcohol-from-91-99.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-mix-cleaning-solution-for-5-gallon-bucket.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-read-cleaning-dilution-labels.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-scale-ml-per-liter-cleaning-labels.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/how-to-scale-oz-per-gallon-cleaning-labels.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/hydrogen-peroxide-dilution-for-cleaning.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/mop-bucket-cleaning-dilution-examples.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/odoban-dilution-ratio-guide-label-first.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/oxygen-bleach-sodium-percarbonate-dilution.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/pine-sol-dilution-ratio-mop-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/quat-disinfectant-dilution-how-to-mix-from-label.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/simple-green-dilution-ratio-chart-label-first.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/tablespoons-per-gallon-to-spray-bottle.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/vinegar-dilution-for-cleaning.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-10-dilution-mean.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-128-dilution-mean.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-20-dilution-mean.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-256-dilution-mean.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-32-dilution-mean.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-50-dilution-mean.html</loc>
-</url>
-<url>
-<loc>https://cleaningratio.com/blogs/what-does-1-to-64-dilution-mean.html</loc>
-</url>
+  <!-- Blog articles -->
+  <url><loc>https://cleaningratio.com/blogs/baking-soda-cleaning-ratios-paste-spray-soak.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/bleach-dilution-for-laundry-a-practical-label-first-guide.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/bleach-dilution-mistakes-to-avoid.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/bleach-ppm-chart-500-1000-5000.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/bleach-vs-vinegar-for-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/borax-cleaning-dilution-guide.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-ammonia.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-baking-soda.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-dish-soap.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-hydrogen-peroxide.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-rubbing-alcohol.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-toilet-bowl-cleaner.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-bleach-and-vinegar.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-vinegar-and-baking-soda.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-vinegar-and-dish-soap.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/can-you-mix-vinegar-and-hydrogen-peroxide.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/capful-in-5-liters-how-to-scale.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/citric-acid-solution-for-cleaning-5-vs-10-percent.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/cleaning-vinegar-vs-white-vinegar-for-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/cleaning-vs-disinfecting-difference.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/dettol-dilution-ratio-1-40-1-20-1-10.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/dilution-ratio-to-percentage-conversion.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/dish-soap-dilution-for-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/does-vinegar-disinfect-for-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/essential-oil-bath-dilution-how-many-drops.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/essential-oil-dilution-chart-for-skin-body-kids.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/essential-oil-dilution-for-body-lotion.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/essential-oil-dilution-for-massage-oil.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/essential-oil-roller-bottle-ratio-10ml-30ml.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/essential-oil-room-spray-ratio.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/fabuloso-dilution-ratio-mop-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-long-does-diluted-bleach-last.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-many-drops-essential-oil-in-diffuser.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-many-drops-essential-oil-per-ounce.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-bleach-for-5-gallon-bucket.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-concentrate-for-1-gallon-of-water.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-concentrate-for-1-liter.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-concentrate-for-500ml-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-much-vinegar-in-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-calculate-dilution-ratio.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-clean-coffee-maker-with-vinegar-ratio.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-disinfecting-surfaces.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-floor-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-mold-cleanup-safety-first-basics.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-bleach-for-toilet-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-cleaner-for-16-oz-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-cleaner-for-32-oz-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-dilute-isopropyl-alcohol-91-to-70.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-make-0-05-percent-bleach-solution-500-ppm.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-make-0-1-percent-bleach-solution-1000-ppm.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-make-0-5-percent-bleach-solution-5000-ppm.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-make-1-to-100-dilution.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-make-70-percent-isopropyl-alcohol-from-91-99.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-mix-cleaning-solution-for-5-gallon-bucket.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-read-cleaning-dilution-labels.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-scale-ml-per-liter-cleaning-labels.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/how-to-scale-oz-per-gallon-cleaning-labels.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/hydrogen-peroxide-dilution-for-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/mop-bucket-cleaning-dilution-examples.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/odoban-dilution-ratio-guide-label-first.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/oxygen-bleach-sodium-percarbonate-dilution.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/pine-sol-dilution-ratio-mop-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/quat-disinfectant-dilution-how-to-mix-from-label.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/ratio-vs-percentage-vs-ppm.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/simple-green-dilution-ratio-chart-label-first.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/tablespoons-per-gallon-to-spray-bottle.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/vinegar-cleaning-ratio-for-floors.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/vinegar-cleaning-ratio-for-windows-and-glass.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/vinegar-dilution-for-cleaning.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/vinegar-ratio-for-cleaning-shower-head.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-10-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-128-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-20-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-256-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-32-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-50-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-does-1-to-64-dilution-mean.html</loc></url>
+  <url><loc>https://cleaningratio.com/blogs/what-not-to-clean-with-vinegar.html</loc></url>
 
 </urlset>
