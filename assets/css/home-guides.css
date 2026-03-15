@@ -1,0 +1,138 @@
+/* =====================================================
+   home-guides.css
+   CleaningRatio – Homepage topic guide entry section
+===================================================== */
+
+.home-guides {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding: 0 var(--space-4) var(--space-6);
+}
+
+.home-guides-shell {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-5);
+}
+
+.home-guides-header {
+  max-width: 760px;
+  margin-bottom: var(--space-4);
+}
+
+.home-guides-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.home-guides-header h2 {
+  margin: 0;
+  line-height: 1.15;
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  color: var(--color-text);
+}
+
+.home-guides-intro {
+  margin: 10px 0 0;
+  max-width: 62ch;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.home-guides-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.guide-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(16, 24, 40, 0.08);
+  border-color: rgba(31, 79, 216, 0.18);
+}
+
+.guide-card-link {
+  display: block;
+  height: 100%;
+  padding: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.guide-card-link:hover {
+  text-decoration: none;
+}
+
+.guide-card-kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.guide-card h3 {
+  margin: 0;
+  line-height: 1.25;
+  font-size: 1.08rem;
+  color: var(--color-text);
+}
+
+.guide-card p {
+  margin: 10px 0 0;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+.guide-card-meta {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.guide-card-cta {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+@media (min-width: 720px) {
+  .home-guides-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1040px) {
+  .home-guides-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .home-guides {
+    padding-bottom: var(--space-5);
+  }
+
+  .guide-card-link {
+    padding: 16px;
+  }
+}
