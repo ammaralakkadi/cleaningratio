@@ -252,6 +252,8 @@
   .article-breadcrumb {
     margin-bottom: 14px;
     font-size: 0.88rem;
+    flex-wrap: wrap;
+    line-height: 1.4;
   }
 
   .article-header {

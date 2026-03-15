@@ -625,7 +625,7 @@ body.menu-open::before {
 
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.8fr 0.8fr 1fr 0.7fr 0.8fr;
     align-items: start;
   }
 }

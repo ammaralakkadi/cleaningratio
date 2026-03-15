@@ -125,15 +125,16 @@
   margin-top: var(--space-2);
 }
 
-.about-cta a {
+.about-section a {
   color: var(--color-primary);
   font-weight: 600;
   text-decoration: none;
 }
 
-.about-cta a:hover {
+.about-section a:hover {
   text-decoration: underline;
 }
+
 /* ---------- Form ---------- */
 .contact-form .form-group label {
   display: flex;
