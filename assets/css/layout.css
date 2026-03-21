@@ -585,6 +585,30 @@ body.menu-open::before {
   line-height: 1.5;
 }
 
+.footer-social {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  align-items: center;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-social-img:hover {
+  opacity: 0.8;
+}
+
 .footer-column h3 {
   margin: 0 0 var(--space-2);
   color: #ffffff;
