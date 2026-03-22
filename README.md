@@ -15,4 +15,4 @@ Free cleaning dilution calculators and mixing guides for household and commercia
 ## About
 6 calculators, 5 topic guides, 79 articles. Built to answer one question fast: how much cleaner do I mix with water?
 
-No sign-ups. No ads. No paywalls.
+No sign-ups. No paywalls.
